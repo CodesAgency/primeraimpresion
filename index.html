@@ -1,11 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">
     <title>P.I. Admin</title>
 </head>
 
@@ -15,13 +17,113 @@
     </div>
     <script type="text/javascript">
     </script>
-    <div id="containerSuper" class="container">
+    <div id="containerSuper" class="container p-4">
         <div id="admin">
-            <p>¿Qué deseas realizar hoy?</p>
+            <p class="h4"><strong>¿Qué deseas realizar hoy?</strong> </p>
+        </div>
+        <div class="container p-4" i="gestionAdmin">
+            <div class="accordion" id="accordionExample">
+                <div class="card">
+                    <div class="card-header" id="headingOne">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            Crear un nuevo Producto:
+                      </button>
+                        </h2>
+                    </div>
+
+                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                        <div class="card-body">
+                            <p class="pl-3 pr-3"><small>En esta opción podrás crear productos, para tu tienda virtual.</small></p>
+                        </div>
+                        <div id="dataAdmin" class="pl-4 pr-4 mb-4">
+                            <div id="consolaAdmin">
+                                <label for="titleConsole">Ingresa un Título al producto:</label>
+                                <input type="text" id="titleConsole" class="console">
+                                <hr class="mt-3 mb-3">
+                                <label for="img">Selecciona una imagen de 278 x 278px :<br> <p class="h6"><small>Recuerda que debes guardarla a una resolución de 150px o DPI.</small></p> </label>
+                                <input type="file" id="img" class="console">
+                                <hr class="mt-3 mb-3">
+                                <label for="price">Pon un valor:</label>
+                                <input type="text" id="price" class="console">
+                                <p>
+
+                                    <a class="btn btn-primary mt-4" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                          Realizar una promocion
+                                    </a>
+
+                                </p>
+                                <div class="collapse" id="collapseExample">
+                                    <div class="card card-body" id="collapseCard">
+                                        <label for="descuento">Realizar descuento %:</label>
+                                        <div id="descuentoDiv">
+                                            <input type="number" id="descuento" class="console" placeholder="Escribe un valor para reducir el valor neto">
+                                            <button class="btn btn-warning">%</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="productBox" class="productBox">
+                                <div id="image" class="imgBox">
+                                    <p>278px x 278px</p>
+                                </div>
+                                <div id="titleBox" class="titleBox">Título Producto</div>
+                                <div id="descripBox"></div>
+                                <div id="Price" class="Price">$0.00</div>
+                                <hr>
+                                <div id="payBox" class="payBox">
+                                    <div id="addCarBox">
+                                        <p><small><a href="#">Agregar al carrito</a></small></p>
+                                    </div>
+                                    <div id="buttonBox">
+                                        <button class="btn btn-warning" id="btnDescuento">Realizar pago</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <script src="js/boxProducts.js"></script>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="headingTwo">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Estadística Financiera de la Tienda Virtual.
+                      </button>
+                        </h2>
+                    </div>
+                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                        <div class="card-body">
+                            <p class="pl-3 pr-3"><small>Obtendrás datos de los productos vendidos por día, mes y año de manera visual.</small></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="headingThree">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Collapsible Group Item #3
+                      </button>
+                        </h2>
+                    </div>
+                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                        <div class="card-body">
+                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird
+                            on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft
+                            beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </div>
+
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
-    <script src="node_modules/bootstrap/dist/css/bootstrap.min.css"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="node_modules/vue/dist/vue.js"></script>
+    <script src="node_modules/progressbar.js/dist/progressbar.js"></script>
+    <script src="node_modules/shifty/dist/shifty.js"></script>
 </body>
 
 </html>
