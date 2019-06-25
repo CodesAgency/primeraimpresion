@@ -1,25 +1,53 @@
-let dataInputs = {
+let dataInputsConsole = {
     title: document.getElementById('titleConsole'),
-    titleValue: document.getElementById('titleConsole').value,
-    image: document.getElementById('img').value,
+    titleBox: document.getElementById('titleBox'),
+    price: document.getElementById('price'),
+    Price: document.getElementById('Price'),
+    descuento: document.getElementById('descuento'),
+    apliDes: document.getElementById('apliDes')
 }
 
-class product {
-    constructor(title, price, desc, file) {
-        this.title = title;
-        this.price = price;
-        this.desc = desc;
-        this.file = file;
+class mathForm {
+    constructor(valorA, valorB) {
+        this.valorA = valorA;
+        this.valorB = valorB;
     }
-    createProductBox() {
-        console.log(this.title);
+    descuento() {
+        return (this.valorA * this.valorB) / 100;
     }
 }
 
-let products = new product("", "", "", dataInputs.titleValue);
+let restDesc = new mathForm(Number(document.getElementById('price').value), Number(document.getElementById('descuento').value));
 
-dataInputs.title.addEventListener('blur', focusDown);
+dataInputsConsole.title.addEventListener('blur', showTitle)
+dataInputsConsole.price.addEventListener('blur', showPrice)
+dataInputsConsole.apliDes.addEventListener('click', apDescuento)
 
-function focusDown() {
-    products.createProductBox();
+function showTitle() {
+    showTitleBox(dataInputsConsole.titleBox, dataInputsConsole.title.value);
+}
+
+function showPrice() {
+    showPriceOn(dataInputsConsole.Price, dataInputsConsole.price.value);
+}
+
+function apDescuento() {
+    console.log(restDesc.descuento());
+
+}
+
+function showTitleBox(objInst, obj) {
+    objInst.innerHTML = obj;
+}
+
+function showPriceOn(objInst, obj) {
+    objInst.innerHTML = `$ ${obj}`;
+}
+
+function promocion(vA, vB) {
+    var valorA = Number(vA);
+    var valorB = Number(vB);
+    let desc = (valorA * valorB) / 100;
+    let restDesc = (vA - desc);
+    console.log(restDesc);
 }
