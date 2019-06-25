@@ -110,3 +110,10 @@ small {
 #btnDescuento {
     margin-left: -15px;
 }
+
+#descripBox{
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+    flex-wrap: wrap;
+}
