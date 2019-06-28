@@ -1,0 +1,29 @@
+
+//contraseña ssh
+^3fS9,A)uW,9
+
+//codigo
+Generating public/private rsa key pair.
+Enter passphrase (empty for no passphrase): 
+Enter same passphrase again: 
+Your identification has been saved in /home/primeraimpresion/.ssh/id_rsa.
+Your public key has been saved in /home/primeraimpresion/.ssh/id_rsa.pub.
+The key fingerprint is:
+74:e6:9b:86:44:38:1a:c8:72:5b:00:c3:bc:17:92:e9 
+The key's randomart image is:
++--[ RSA 1024]----+
+|=.+              |
+| O +   .         |
+|o * + o o o      |
+| E + o + +       |
+|  o .   S .      |
+|       . . o     |
+|        . +      |
+|         .       |
+|                 |
++-----------------+
+
+usuario y contraseña de godaddy:
+Kexam2018
+
+Kexam2020

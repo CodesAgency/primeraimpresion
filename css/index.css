@@ -111,9 +111,16 @@ small {
     margin-left: -15px;
 }
 
-#descripBox{
+#descripBox {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-content: center;
     flex-wrap: wrap;
+}
+
+#Price {
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    border: solid 0.5 gray;
 }

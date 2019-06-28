@@ -13,30 +13,15 @@ class mainClassJs {
     constructor(valorA, valorB, obj, id, nameId, appendObj) {
         this.valorA = valorA;
         this.valorB = valorB;
-        this.obj = obj;
-        this.id = id;
-        this.nameId = nameId;
-        this.appendObj = appendObj;
     }
     descuento() {
         return (this.valorA - ((this.valorA * this.valorB) / 100));
     }
-    createDiv(){
-        const cDiv = document.createElement(this.obj);
-    this.appendObj.appendChild(cDiv);
-    cDiv.setAttribute(this.id, this.nameId);
-    let div = document.getElementById(this.nameId);
-    dataInputsConsole.Price.appendChild(div);
-    div.innerHTML = "$" + this.descuento();
-    div.style.textDecoration = "none";
-    div.style.fontSize = "30pt";
-    div.style.color = "#FF5D00";
-    }
 }
 
-dataInputsConsole.title.addEventListener('blur', showTitle)
-dataInputsConsole.price.addEventListener('blur', showPrice)
-dataInputsConsole.apliDes.addEventListener('click', apDescuento)
+dataInputsConsole.title.addEventListener('blur', showTitle);
+dataInputsConsole.price.addEventListener('blur', showPrice);
+dataInputsConsole.apliDes.addEventListener('click', apDescuento);
 
 function showTitle() {
     showTitleBox(dataInputsConsole.titleBox, dataInputsConsole.title.value);
@@ -47,12 +32,10 @@ function showPrice() {
 }
 
 function apDescuento() {
-    let priceValue =  Number(dataInputsConsole.price.value);
-    let descValue =  Number(dataInputsConsole.descuento.value);
-    let MainClassJs = new mainClassJs(priceValue, descValue, 'div', 'id', 'div', dataInputsConsole.descripBox);
-    MainClassJs.createDiv();
-    dataInputsConsole.paraPrice.style.textDecoration = "line-through";
-    dataInputsConsole.paraPrice.style.color= "gray";
+    let priceValue = Number(document.getElementById('price').value);
+    let descValue = Number(document.getElementById('descuento').value);
+    let MainClassJs = new mainClassJs(priceValue, descValue);
+    dataInputsConsole.Price.innerHTML = "$" + MainClassJs.descuento();
 }
 
 function showTitleBox(objInst, obj) {

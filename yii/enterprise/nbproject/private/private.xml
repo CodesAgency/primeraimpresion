@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/C:/xampp/htdocs/nuevospro/enterprise/protected/config/main.php</file>
+            <file>file:/C:/xampp/htdocs/nuevospro/enterprise/protected/views/stockSucursal/_form.php</file>
+            <file>file:/C:/xampp/htdocs/nuevospro/enterprise/protected/components/UserIdentity.php</file>
+            <file>file:/C:/xampp/htdocs/nuevospro/enterprise/themes/admin/views/layouts/tpl_navigation.php</file>
+            <file>file:/C:/xampp/htdocs/nuevospro/enterprise/protected/models/StockSucursal.php</file>
+            <file>file:/C:/xampp/htdocs/nuevospro/enterprise/themes/admin/views/site/login.php</file>
+            <file>file:/C:/xampp/htdocs/nuevospro/enterprise/protected/models/LoginForm.php</file>
+            <file>file:/C:/xampp/htdocs/nuevospro/enterprise/protected/views/clientes/_form.php</file>
+            <file>file:/C:/xampp/htdocs/nuevospro/enterprise/protected/views/stockSucursal/index.php</file>
+            <file>file:/C:/xampp/htdocs/nuevospro/enterprise/protected/views/stockSucursal/_view.php</file>
+            <file>file:/C:/xampp/htdocs/nuevospro/enterprise/protected/models/Sucursal.php</file>
+        </group>
+    </open-files>
+</project-private>
