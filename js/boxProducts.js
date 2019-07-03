@@ -36,7 +36,7 @@ function apDescuento() {
     let descValue = Number(document.getElementById('descuento').value);
     let MainClassJs = new mainClassJs(priceValue, descValue);
     dataInputsConsole.Price.innerHTML = "$" + MainClassJs.descuento();
-}
+}~
 
 function showTitleBox(objInst, obj) {
     objInst.innerHTML = obj;

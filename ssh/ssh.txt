@@ -27,3 +27,7 @@ usuario y contraseña de godaddy:
 Kexam2018
 
 Kexam2020
+
+contraseña de base datos blog
+primerai_root
+_VKHe%C,WF~M
