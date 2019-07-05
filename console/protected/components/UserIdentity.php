@@ -12,7 +12,7 @@ class UserIdentity extends CUserIdentity
     private $nivel;
     private $cedula;
     private $paralelo;
-   // private $sucursal;
+    private $id;
     /**
 	 * Authenticates a user.
 	 * The example implementation makes sure if the username and password
@@ -34,17 +34,17 @@ class UserIdentity extends CUserIdentity
                     $this->setState('nivel', $user->nivel);
                     $this->setState('cedula', $user->cedula);
                     $this->setState('paralelo', $user->paralelo);
-                    //$this->setState('sucursal', $user->sucursal);
+                    $this->setState('id', $user->id);
                     
                     yii::app()->user->getState("nivel");
                     yii::app()->user->getState("cedula");                     
                     yii::app()->user->getState("paralelo");
-                    //yii::app()->user->getState("sucursal");
+                    yii::app()->user->getState("id");
                     
                     $this->_id=$user->id;
                     $this->cedula=$user->cedula;
                     $this->paralelo=$user->paralelo;
-                    //$this->paralelo=$user->sucursal;
+                    $this->id=$user->id;
                     $this->errorCode=self::ERROR_NONE;
                     $cedula=yii::app()->user->getState("cedula");
 		

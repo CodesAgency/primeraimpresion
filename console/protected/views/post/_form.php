@@ -33,7 +33,22 @@
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'contenido'); ?>
-		<?php echo $form->textArea($model,'contenido',array('rows'=>6, 'cols'=>50)); ?>
+            <textarea name="comentenido" rows="10" cols="40"><?php 
+                 if (isset($_REQUEST['txt-content'])) 
+                    {
+                     echo $_REQUEST['txt-content'];
+                        $contenido = $_REQUEST['txt-content'];
+                        $archivo = fopen('archivo.txt','a');
+                        fputs($archivo,$contenido);
+                        fclose($archivo);
+                    }else
+                            {
+                            echo "";
+                            }
+                 
+                 ?></textarea>
+            
+                		
 		<?php echo $form->error($model,'contenido'); ?>
 	</div>
 

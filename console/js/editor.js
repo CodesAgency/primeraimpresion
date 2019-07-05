@@ -1357,7 +1357,7 @@ You should have received a copy of the GNU General Public License along with thi
 									                		class:"btn btn-default",
 									                		"data-dismiss":"modal",
 									                		"aria-hidden":"true"
-									               			}).html('Cancel')
+									               			}).html('Cancelar')
 								           	  			).append($('<button/>',{
 								                			type:"button",
 								                			class:"btn btn-success",
