@@ -32,6 +32,21 @@ class SiteController extends Controller
 		$this->render('index');
 	}
 
+        public function actionhistory($id)
+	{
+		$this->render('history',array(
+			'model'=>$this->loadModel($id),
+		));
+		//$this->render('history');
+	}
+        
+        public function loadModel($id)
+	{
+		$model=Post::model()->findByPk($id);
+		if($model===null)
+			throw new CHttpException(404,'The requested page does not exist.');
+		return $model;
+	}
         
         public function actionR1()
 	{

@@ -11620,3 +11620,255 @@ Stack trace:
 REQUEST_URI=/nuevospro/primeraimpresion/console/index.php?r=site/login
 HTTP_REFERER=http://localhost:52/nuevospro/primeraimpresion/console/index.php?r=site/login
 ---
+2019/07/05 22:59:01 [error] [exception.CHttpException.404] CHttpException: El sistema no ha podido encontrar la acción "history?id=1" solicitada. in C:\xampp\htdocs\nuevospro\primeraimpresion\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\nuevospro\primeraimpresion\framework\web\CController.php(270): CController->missingAction('history?id=1')
+#1 C:\xampp\htdocs\nuevospro\primeraimpresion\framework\web\CWebApplication.php(282): CController->run('history?id=1')
+#2 C:\xampp\htdocs\nuevospro\primeraimpresion\framework\web\CWebApplication.php(141): CWebApplication->runController('site/history?id...')
+#3 C:\xampp\htdocs\nuevospro\primeraimpresion\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\nuevospro\primeraimpresion\console\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/nuevospro/primeraimpresion/console/index.php?r=site/history?id=1
+---
+2019/07/05 23:03:07 [error] [php] Undefined variable: conexion (C:\xampp\htdocs\nuevospro\primeraimpresion\console\protected\views\site\history.php:11)
+Stack trace:
+#0 C:\xampp\htdocs\nuevospro\primeraimpresion\framework\web\CController.php(869): SiteController->renderFile()
+#1 C:\xampp\htdocs\nuevospro\primeraimpresion\framework\web\CController.php(782): SiteController->renderPartial()
+#2 C:\xampp\htdocs\nuevospro\primeraimpresion\console\protected\controllers\SiteController.php(39): SiteController->render()
+#3 C:\xampp\htdocs\nuevospro\primeraimpresion\framework\web\actions\CInlineAction.php(49): SiteController->actionhistory()
+#4 C:\xampp\htdocs\nuevospro\primeraimpresion\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\xampp\htdocs\nuevospro\primeraimpresion\framework\web\CController.php(286): SiteController->runAction()
+#6 C:\xampp\htdocs\nuevospro\primeraimpresion\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#7 C:\xampp\htdocs\nuevospro\primeraimpresion\framework\web\CWebApplication.php(282): SiteController->run()
+#8 C:\xampp\htdocs\nuevospro\primeraimpresion\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\xampp\htdocs\nuevospro\primeraimpresion\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\nuevospro\primeraimpresion\console\index.php(13): CWebApplication->run()
+REQUEST_URI=/nuevospro/primeraimpresion/console/index.php?r=site/history
+2019/07/05 23:03:29 [error] [php] Undefined index: id (C:\xampp\htdocs\nuevospro\primeraimpresion\console\protected\views\site\history.php:12)
+Stack trace:
+#0 C:\xampp\htdocs\nuevospro\primeraimpresion\framework\web\CController.php(869): SiteController->renderFile()
+#1 C:\xampp\htdocs\nuevospro\primeraimpresion\framework\web\CController.php(782): SiteController->renderPartial()
+#2 C:\xampp\htdocs\nuevospro\primeraimpresion\console\protected\controllers\SiteController.php(39): SiteController->render()
+#3 C:\xampp\htdocs\nuevospro\primeraimpresion\framework\web\actions\CInlineAction.php(49): SiteController->actionhistory()
+#4 C:\xampp\htdocs\nuevospro\primeraimpresion\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\xampp\htdocs\nuevospro\primeraimpresion\framework\web\CController.php(286): SiteController->runAction()
+#6 C:\xampp\htdocs\nuevospro\primeraimpresion\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#7 C:\xampp\htdocs\nuevospro\primeraimpresion\framework\web\CWebApplication.php(282): SiteController->run()
+#8 C:\xampp\htdocs\nuevospro\primeraimpresion\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\xampp\htdocs\nuevospro\primeraimpresion\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\nuevospro\primeraimpresion\console\index.php(13): CWebApplication->run()
+REQUEST_URI=/nuevospro/primeraimpresion/console/index.php?r=site/history
+2019/07/05 23:04:57 [error] [exception.CHttpException.404] CHttpException: El sistema no ha podido encontrar la acción "history?id=1" solicitada. in C:\xampp\htdocs\nuevospro\primeraimpresion\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\nuevospro\primeraimpresion\framework\web\CController.php(270): CController->missingAction('history?id=1')
+#1 C:\xampp\htdocs\nuevospro\primeraimpresion\framework\web\CWebApplication.php(282): CController->run('history?id=1')
+#2 C:\xampp\htdocs\nuevospro\primeraimpresion\framework\web\CWebApplication.php(141): CWebApplication->runController('site/history?id...')
+#3 C:\xampp\htdocs\nuevospro\primeraimpresion\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\nuevospro\primeraimpresion\console\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/nuevospro/primeraimpresion/console/index.php?r=site/history?id=1
+---
+2019/07/05 23:05:46 [error] [exception.CHttpException.404] CHttpException: El sistema no ha podido encontrar la acción "history?id=1" solicitada. in C:\xampp\htdocs\nuevospro\primeraimpresion\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\nuevospro\primeraimpresion\framework\web\CController.php(270): CController->missingAction('history?id=1')
+#1 C:\xampp\htdocs\nuevospro\primeraimpresion\framework\web\CWebApplication.php(282): CController->run('history?id=1')
+#2 C:\xampp\htdocs\nuevospro\primeraimpresion\framework\web\CWebApplication.php(141): CWebApplication->runController('site/history?id...')
+#3 C:\xampp\htdocs\nuevospro\primeraimpresion\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\nuevospro\primeraimpresion\console\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/nuevospro/primeraimpresion/console/index.php?r=site/history?id=1
+---
+2019/07/05 23:05:48 [error] [exception.CHttpException.404] CHttpException: El sistema no ha podido encontrar la acción "history?id=1" solicitada. in C:\xampp\htdocs\nuevospro\primeraimpresion\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\nuevospro\primeraimpresion\framework\web\CController.php(270): CController->missingAction('history?id=1')
+#1 C:\xampp\htdocs\nuevospro\primeraimpresion\framework\web\CWebApplication.php(282): CController->run('history?id=1')
+#2 C:\xampp\htdocs\nuevospro\primeraimpresion\framework\web\CWebApplication.php(141): CWebApplication->runController('site/history?id...')
+#3 C:\xampp\htdocs\nuevospro\primeraimpresion\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\nuevospro\primeraimpresion\console\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/nuevospro/primeraimpresion/console/index.php?r=site/history?id=1
+---
+2019/07/05 23:05:50 [error] [exception.CHttpException.404] CHttpException: El sistema no ha podido encontrar la acción "history?id=1" solicitada. in C:\xampp\htdocs\nuevospro\primeraimpresion\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\nuevospro\primeraimpresion\framework\web\CController.php(270): CController->missingAction('history?id=1')
+#1 C:\xampp\htdocs\nuevospro\primeraimpresion\framework\web\CWebApplication.php(282): CController->run('history?id=1')
+#2 C:\xampp\htdocs\nuevospro\primeraimpresion\framework\web\CWebApplication.php(141): CWebApplication->runController('site/history?id...')
+#3 C:\xampp\htdocs\nuevospro\primeraimpresion\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\nuevospro\primeraimpresion\console\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/nuevospro/primeraimpresion/console/index.php?r=site/history?id=1
+---
+2019/07/05 23:05:52 [error] [exception.CHttpException.404] CHttpException: El sistema no ha podido encontrar la acción "history?id=1" solicitada. in C:\xampp\htdocs\nuevospro\primeraimpresion\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\nuevospro\primeraimpresion\framework\web\CController.php(270): CController->missingAction('history?id=1')
+#1 C:\xampp\htdocs\nuevospro\primeraimpresion\framework\web\CWebApplication.php(282): CController->run('history?id=1')
+#2 C:\xampp\htdocs\nuevospro\primeraimpresion\framework\web\CWebApplication.php(141): CWebApplication->runController('site/history?id...')
+#3 C:\xampp\htdocs\nuevospro\primeraimpresion\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\nuevospro\primeraimpresion\console\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/nuevospro/primeraimpresion/console/index.php?r=site/history?id=1
+---
+2019/07/05 23:05:54 [error] [exception.CHttpException.404] CHttpException: El sistema no ha podido encontrar la acción "history?id=1" solicitada. in C:\xampp\htdocs\nuevospro\primeraimpresion\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\nuevospro\primeraimpresion\framework\web\CController.php(270): CController->missingAction('history?id=1')
+#1 C:\xampp\htdocs\nuevospro\primeraimpresion\framework\web\CWebApplication.php(282): CController->run('history?id=1')
+#2 C:\xampp\htdocs\nuevospro\primeraimpresion\framework\web\CWebApplication.php(141): CWebApplication->runController('site/history?id...')
+#3 C:\xampp\htdocs\nuevospro\primeraimpresion\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\nuevospro\primeraimpresion\console\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/nuevospro/primeraimpresion/console/index.php?r=site/history?id=1
+---
+2019/07/05 23:05:59 [error] [exception.CException] CException: SiteController y sus behaviors no tienen un método o closure llamado "loadModel". in C:\xampp\htdocs\nuevospro\primeraimpresion\framework\base\CComponent.php:266
+Stack trace:
+#0 C:\xampp\htdocs\nuevospro\primeraimpresion\console\protected\controllers\SiteController.php(38): CComponent->__call('loadModel', Array)
+#1 [internal function]: SiteController->actionhistory('1')
+#2 C:\xampp\htdocs\nuevospro\primeraimpresion\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(SiteController), Array)
+#3 C:\xampp\htdocs\nuevospro\primeraimpresion\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(SiteController), Object(ReflectionMethod), Array)
+#4 C:\xampp\htdocs\nuevospro\primeraimpresion\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\xampp\htdocs\nuevospro\primeraimpresion\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#6 C:\xampp\htdocs\nuevospro\primeraimpresion\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\htdocs\nuevospro\primeraimpresion\framework\web\CWebApplication.php(282): CController->run('history')
+#8 C:\xampp\htdocs\nuevospro\primeraimpresion\framework\web\CWebApplication.php(141): CWebApplication->runController('site/history')
+#9 C:\xampp\htdocs\nuevospro\primeraimpresion\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\nuevospro\primeraimpresion\console\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/nuevospro/primeraimpresion/console/index.php?r=site/history&id=1
+---
+2019/07/05 23:06:35 [error] [php] require_once(banner.php): failed to open stream: No such file or directory (C:\xampp\htdocs\nuevospro\primeraimpresion\console\protected\views\site\history.php:19)
+Stack trace:
+#0 C:\xampp\htdocs\nuevospro\primeraimpresion\framework\web\CBaseController.php(95): SiteController->renderInternal()
+#1 C:\xampp\htdocs\nuevospro\primeraimpresion\framework\web\CController.php(869): SiteController->renderFile()
+#2 C:\xampp\htdocs\nuevospro\primeraimpresion\framework\web\CController.php(782): SiteController->renderPartial()
+#3 C:\xampp\htdocs\nuevospro\primeraimpresion\console\protected\controllers\SiteController.php(38): SiteController->render()
+#4 unknown(0): SiteController->actionhistory()
+#5 C:\xampp\htdocs\nuevospro\primeraimpresion\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs()
+#6 C:\xampp\htdocs\nuevospro\primeraimpresion\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#7 C:\xampp\htdocs\nuevospro\primeraimpresion\framework\web\CController.php(308): CInlineAction->runWithParams()
+#8 C:\xampp\htdocs\nuevospro\primeraimpresion\framework\web\CController.php(286): SiteController->runAction()
+#9 C:\xampp\htdocs\nuevospro\primeraimpresion\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#10 C:\xampp\htdocs\nuevospro\primeraimpresion\framework\web\CWebApplication.php(282): SiteController->run()
+#11 C:\xampp\htdocs\nuevospro\primeraimpresion\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#12 C:\xampp\htdocs\nuevospro\primeraimpresion\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#13 C:\xampp\htdocs\nuevospro\primeraimpresion\console\index.php(13): CWebApplication->run()
+REQUEST_URI=/nuevospro/primeraimpresion/console/index.php?r=site/history&id=1
+2019/07/05 23:07:17 [error] [php] require_once(title.php): failed to open stream: No such file or directory (C:\xampp\htdocs\nuevospro\primeraimpresion\console\protected\views\site\history.php:21)
+Stack trace:
+#0 C:\xampp\htdocs\nuevospro\primeraimpresion\framework\web\CBaseController.php(95): SiteController->renderInternal()
+#1 C:\xampp\htdocs\nuevospro\primeraimpresion\framework\web\CController.php(869): SiteController->renderFile()
+#2 C:\xampp\htdocs\nuevospro\primeraimpresion\framework\web\CController.php(782): SiteController->renderPartial()
+#3 C:\xampp\htdocs\nuevospro\primeraimpresion\console\protected\controllers\SiteController.php(38): SiteController->render()
+#4 unknown(0): SiteController->actionhistory()
+#5 C:\xampp\htdocs\nuevospro\primeraimpresion\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs()
+#6 C:\xampp\htdocs\nuevospro\primeraimpresion\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#7 C:\xampp\htdocs\nuevospro\primeraimpresion\framework\web\CController.php(308): CInlineAction->runWithParams()
+#8 C:\xampp\htdocs\nuevospro\primeraimpresion\framework\web\CController.php(286): SiteController->runAction()
+#9 C:\xampp\htdocs\nuevospro\primeraimpresion\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#10 C:\xampp\htdocs\nuevospro\primeraimpresion\framework\web\CWebApplication.php(282): SiteController->run()
+#11 C:\xampp\htdocs\nuevospro\primeraimpresion\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#12 C:\xampp\htdocs\nuevospro\primeraimpresion\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#13 C:\xampp\htdocs\nuevospro\primeraimpresion\console\index.php(13): CWebApplication->run()
+REQUEST_URI=/nuevospro/primeraimpresion/console/index.php?r=site/history&id=1
+2019/07/05 23:07:38 [error] [php] require_once(title.php): failed to open stream: No such file or directory (C:\xampp\htdocs\nuevospro\primeraimpresion\console\protected\views\site\history.php:21)
+Stack trace:
+#0 C:\xampp\htdocs\nuevospro\primeraimpresion\framework\web\CBaseController.php(95): SiteController->renderInternal()
+#1 C:\xampp\htdocs\nuevospro\primeraimpresion\framework\web\CController.php(869): SiteController->renderFile()
+#2 C:\xampp\htdocs\nuevospro\primeraimpresion\framework\web\CController.php(782): SiteController->renderPartial()
+#3 C:\xampp\htdocs\nuevospro\primeraimpresion\console\protected\controllers\SiteController.php(38): SiteController->render()
+#4 unknown(0): SiteController->actionhistory()
+#5 C:\xampp\htdocs\nuevospro\primeraimpresion\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs()
+#6 C:\xampp\htdocs\nuevospro\primeraimpresion\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#7 C:\xampp\htdocs\nuevospro\primeraimpresion\framework\web\CController.php(308): CInlineAction->runWithParams()
+#8 C:\xampp\htdocs\nuevospro\primeraimpresion\framework\web\CController.php(286): SiteController->runAction()
+#9 C:\xampp\htdocs\nuevospro\primeraimpresion\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#10 C:\xampp\htdocs\nuevospro\primeraimpresion\framework\web\CWebApplication.php(282): SiteController->run()
+#11 C:\xampp\htdocs\nuevospro\primeraimpresion\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#12 C:\xampp\htdocs\nuevospro\primeraimpresion\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#13 C:\xampp\htdocs\nuevospro\primeraimpresion\console\index.php(13): CWebApplication->run()
+REQUEST_URI=/nuevospro/primeraimpresion/console/index.php?r=site/history&id=1
+2019/07/05 23:08:17 [error] [php] require_once(publicComent.php): failed to open stream: No such file or directory (C:\xampp\htdocs\nuevospro\primeraimpresion\console\protected\views\site\history.php:31)
+Stack trace:
+#0 C:\xampp\htdocs\nuevospro\primeraimpresion\framework\web\CBaseController.php(95): SiteController->renderInternal()
+#1 C:\xampp\htdocs\nuevospro\primeraimpresion\framework\web\CController.php(869): SiteController->renderFile()
+#2 C:\xampp\htdocs\nuevospro\primeraimpresion\framework\web\CController.php(782): SiteController->renderPartial()
+#3 C:\xampp\htdocs\nuevospro\primeraimpresion\console\protected\controllers\SiteController.php(38): SiteController->render()
+#4 unknown(0): SiteController->actionhistory()
+#5 C:\xampp\htdocs\nuevospro\primeraimpresion\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs()
+#6 C:\xampp\htdocs\nuevospro\primeraimpresion\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#7 C:\xampp\htdocs\nuevospro\primeraimpresion\framework\web\CController.php(308): CInlineAction->runWithParams()
+#8 C:\xampp\htdocs\nuevospro\primeraimpresion\framework\web\CController.php(286): SiteController->runAction()
+#9 C:\xampp\htdocs\nuevospro\primeraimpresion\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#10 C:\xampp\htdocs\nuevospro\primeraimpresion\framework\web\CWebApplication.php(282): SiteController->run()
+#11 C:\xampp\htdocs\nuevospro\primeraimpresion\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#12 C:\xampp\htdocs\nuevospro\primeraimpresion\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#13 C:\xampp\htdocs\nuevospro\primeraimpresion\console\index.php(13): CWebApplication->run()
+REQUEST_URI=/nuevospro/primeraimpresion/console/index.php?r=site/history&id=1
+2019/07/05 23:09:47 [error] [exception.CHttpException.404] CHttpException: El sistema no ha podido encontrar la acción "history?id=1" solicitada. in C:\xampp\htdocs\nuevospro\primeraimpresion\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\nuevospro\primeraimpresion\framework\web\CController.php(270): CController->missingAction('history?id=1')
+#1 C:\xampp\htdocs\nuevospro\primeraimpresion\framework\web\CWebApplication.php(282): CController->run('history?id=1')
+#2 C:\xampp\htdocs\nuevospro\primeraimpresion\framework\web\CWebApplication.php(141): CWebApplication->runController('site/history?id...')
+#3 C:\xampp\htdocs\nuevospro\primeraimpresion\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\nuevospro\primeraimpresion\console\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/nuevospro/primeraimpresion/console/index.php?r=site/history?id=1
+---
+2019/07/05 23:09:48 [error] [exception.CHttpException.404] CHttpException: El sistema no ha podido encontrar la acción "history?id=1" solicitada. in C:\xampp\htdocs\nuevospro\primeraimpresion\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\nuevospro\primeraimpresion\framework\web\CController.php(270): CController->missingAction('history?id=1')
+#1 C:\xampp\htdocs\nuevospro\primeraimpresion\framework\web\CWebApplication.php(282): CController->run('history?id=1')
+#2 C:\xampp\htdocs\nuevospro\primeraimpresion\framework\web\CWebApplication.php(141): CWebApplication->runController('site/history?id...')
+#3 C:\xampp\htdocs\nuevospro\primeraimpresion\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\nuevospro\primeraimpresion\console\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/nuevospro/primeraimpresion/console/index.php?r=site/history?id=1
+---
+2019/07/05 23:09:49 [error] [exception.CHttpException.404] CHttpException: El sistema no ha podido encontrar la acción "history?id=1" solicitada. in C:\xampp\htdocs\nuevospro\primeraimpresion\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\nuevospro\primeraimpresion\framework\web\CController.php(270): CController->missingAction('history?id=1')
+#1 C:\xampp\htdocs\nuevospro\primeraimpresion\framework\web\CWebApplication.php(282): CController->run('history?id=1')
+#2 C:\xampp\htdocs\nuevospro\primeraimpresion\framework\web\CWebApplication.php(141): CWebApplication->runController('site/history?id...')
+#3 C:\xampp\htdocs\nuevospro\primeraimpresion\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\nuevospro\primeraimpresion\console\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/nuevospro/primeraimpresion/console/index.php?r=site/history?id=1
+---
+2019/07/05 23:09:51 [error] [exception.CHttpException.404] CHttpException: El sistema no ha podido encontrar la acción "history?id=1" solicitada. in C:\xampp\htdocs\nuevospro\primeraimpresion\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\nuevospro\primeraimpresion\framework\web\CController.php(270): CController->missingAction('history?id=1')
+#1 C:\xampp\htdocs\nuevospro\primeraimpresion\framework\web\CWebApplication.php(282): CController->run('history?id=1')
+#2 C:\xampp\htdocs\nuevospro\primeraimpresion\framework\web\CWebApplication.php(141): CWebApplication->runController('site/history?id...')
+#3 C:\xampp\htdocs\nuevospro\primeraimpresion\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\nuevospro\primeraimpresion\console\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/nuevospro/primeraimpresion/console/index.php?r=site/history?id=1
+---
+2019/07/05 23:09:52 [error] [exception.CHttpException.404] CHttpException: El sistema no ha podido encontrar la acción "history?id=1" solicitada. in C:\xampp\htdocs\nuevospro\primeraimpresion\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\nuevospro\primeraimpresion\framework\web\CController.php(270): CController->missingAction('history?id=1')
+#1 C:\xampp\htdocs\nuevospro\primeraimpresion\framework\web\CWebApplication.php(282): CController->run('history?id=1')
+#2 C:\xampp\htdocs\nuevospro\primeraimpresion\framework\web\CWebApplication.php(141): CWebApplication->runController('site/history?id...')
+#3 C:\xampp\htdocs\nuevospro\primeraimpresion\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\nuevospro\primeraimpresion\console\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/nuevospro/primeraimpresion/console/index.php?r=site/history?id=1
+---
+2019/07/05 23:09:53 [error] [exception.CHttpException.404] CHttpException: El sistema no ha podido encontrar la acción "history?id=1" solicitada. in C:\xampp\htdocs\nuevospro\primeraimpresion\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\nuevospro\primeraimpresion\framework\web\CController.php(270): CController->missingAction('history?id=1')
+#1 C:\xampp\htdocs\nuevospro\primeraimpresion\framework\web\CWebApplication.php(282): CController->run('history?id=1')
+#2 C:\xampp\htdocs\nuevospro\primeraimpresion\framework\web\CWebApplication.php(141): CWebApplication->runController('site/history?id...')
+#3 C:\xampp\htdocs\nuevospro\primeraimpresion\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\nuevospro\primeraimpresion\console\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/nuevospro/primeraimpresion/console/index.php?r=site/history?id=1
+---
+2019/07/05 23:09:54 [error] [exception.CHttpException.404] CHttpException: El sistema no ha podido encontrar la acción "history?id=1" solicitada. in C:\xampp\htdocs\nuevospro\primeraimpresion\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\nuevospro\primeraimpresion\framework\web\CController.php(270): CController->missingAction('history?id=1')
+#1 C:\xampp\htdocs\nuevospro\primeraimpresion\framework\web\CWebApplication.php(282): CController->run('history?id=1')
+#2 C:\xampp\htdocs\nuevospro\primeraimpresion\framework\web\CWebApplication.php(141): CWebApplication->runController('site/history?id...')
+#3 C:\xampp\htdocs\nuevospro\primeraimpresion\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\nuevospro\primeraimpresion\console\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/nuevospro/primeraimpresion/console/index.php?r=site/history?id=1
+---
