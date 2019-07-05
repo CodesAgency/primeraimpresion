@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -24,7 +23,6 @@
     background-color: gray;
     border: solid white 3px;
    }
-
 </style>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Free yii themes, free web application theme">
@@ -34,7 +32,6 @@
     <!--[if lt IE 9]>
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
-
 	<?php
 	  $baseUrl = Yii::app()->theme->baseUrl; 
 	  $cs = Yii::app()->getClientScript();
@@ -70,9 +67,7 @@
 	  $cs->registerScriptFile($baseUrl.'/js/styleswitcher.js');
 	?>
   </head>
-
 <body>
-
 <section id="navigation-main">   
 <!-- Require the navigation -->
 <?php require_once('tpl_navigation.php')?>
