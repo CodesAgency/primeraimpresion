@@ -1,3 +1,6 @@
+<?php 
+require_once('./console/conexion3.php');
+?>
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -41,7 +44,14 @@
 </head>
 <body>
     <div class="container-fluid">
-        <div class="container mt-4" id="contenido">
+	<?php
+	$registros=mysqli_query($conexion,"select * from post where id='$_REQUEST[id]'") or
+   die("Problemas en el select:".mysqli_error($conexion));
+
+if ($reg=mysqli_fetch_array($registros))
+{
+	?>
+	<div class="container mt-4" id="contenido">
             <?php require_once('banner.php') ?>
             <section class="container mt-4 mb-4">
                 <h2><strong><?php require_once('title.php') ?></strong></h2>
@@ -59,6 +69,35 @@
                 <div id="request"></div>
             </section>            
         </div>
+	<?php 
+}
+else
+{
+	?>
+	
+	<div class="container mt-4" id="contenido">
+            <?php require_once('banner.php') ?>
+            <section class="container mt-4 mb-4">
+                <h2>Lo siento No existe el post</strong></h2>
+                <h5><?php require_once('subtitle.php')?></h5>
+                <div class="paragraph">
+                    <button class="btn btn-warning" id="commentHistory">
+                        Comentar Historia
+                    </button>
+                </div>
+            </section>
+            <section class="container-fluid mt-4 mb-4 p-4">
+                <?php 
+                    require_once('publicComent.php');
+                ?>
+                <div id="request"></div>
+            </section>            
+        </div>
+	
+	<?php 
+}
+	?>
+        
     </div>
 </body>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
