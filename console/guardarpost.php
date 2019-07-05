@@ -6,18 +6,32 @@ include("conexion3.php");
 $registros=mysqli_query($conexion,"Select * from post order by id DESC LIMIT 1") or
   die("Problemas en el select:".mysqli_error($conexion));
 
-$titulo = $_REQUEST['titulo'];
+
 $descripcion_breve = $_REQUEST['descripcion_breve'];
-$contenido = htmlentities($_REQUEST['txt-content']);
+$contenido = $_REQUEST['txt-content'];
 echo $_REQUEST['txt-content'].$contenido;
 $videoUrl = $_REQUEST['video'];
 $status = $_REQUEST['status'];
 $categoria_id = $_REQUEST['categoria_id'];
 $users_id = $_REQUEST['users_id'];
 
+if (isset($_REQUEST['titulo'])) 
+	{
+        $titulo = $_REQUEST['titulo'];
+	}else
+		{
+		$titulo='';
+		}
+
+                
 if ($reg=mysqli_fetch_array($registros))
 {
+    
   $id=$reg['id']+1;
+}
+else
+{
+  $id=1;  
 }
 echo $id;
 
@@ -27,7 +41,13 @@ mysqli_query($conexion,"INSERT INTO post(id, titulo, descripcion_breve, contenid
 mysqli_close($conexion);
 
 // crear directorio
-
+if (isset($_POST["imagen"])) 
+	{
+        echo 'si hay imagen';
+	}else
+		{
+		echo 'no hay imagen';
+		}
 					
 					$Rando=$id;
 					$carpeta = './img/'.$Rando."/";

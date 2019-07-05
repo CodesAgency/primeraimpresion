@@ -7,31 +7,26 @@ $categoria=mysqli_query($conexion,"select * from categoria") or
 <html>
 
 <head>
-    <title></title>
-    <script type="text/javascript" src="js/jquery-1.12.0.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="js/editor.js"></script>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="css/editor.css">
-    <script type="text/javascript">
-        $(document).ready(function() {
-            $('#txt-content').Editor();
+	<title></title>
+	<script type="text/javascript" src="js/jquery-1.12.0.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/editor.js"></script>	
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/editor.css">
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('#txt-content').Editor();
 
-            $('#txt-content').Editor('setText', ['<p style="color:red;">Hola</p>']);
+			$('#txt-content').Editor('setText', ['<p style="color:red;">Hola</p>']);
 
-            $('#btn-enviar').click(function(e) {
-                e.preventDefault();
-                $('#txt-content').text($('#txt-content').Editor('getText'));
-                $('#frm-test').submit();
-            });
-        });
-    </script>
-    <style>
-        input {
-            width: 100%;
-        }
-    </style>
+			$('#btn-enviar').click(function(e){
+				e.preventDefault();
+				$('#txt-content').text($('#txt-content').Editor('getText'));
+				$('#frm-test').submit();				
+			});
+		});	
+	</script>
 </head>
 
 <body>
@@ -78,7 +73,7 @@ $categoria=mysqli_query($conexion,"select * from categoria") or
                     Imagen Principal
                     <input name="imagen" type="file" maxlength="150">
                     <input type="hidden" name="users_id" value="<?php echo $_REQUEST['idusers']?>">
-                    <input type="submit" value="Agregar" name="enviar" style="cursor: pointer">
+                    <input type="submit" class="btn btn-default" id="btn-enviar" value="Mostrar Resultado">
                 </form>
 
             </div>
@@ -87,6 +82,9 @@ $categoria=mysqli_query($conexion,"select * from categoria") or
     </div>
 
 
+    
+    
+    
 </body>
 
 </html>
