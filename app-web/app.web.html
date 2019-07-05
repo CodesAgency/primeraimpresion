@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Overpass" rel="stylesheet">
+    <title>Web-app/P.Impresion</title>
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    <script src="jquery-library.js"></script>
+</head>
+
+<body>
+    <section id="title">
+        <h2>apiShot - Primera Impresión</h2>
+    </section>
+    <div class="container">
+        <section id="menu"></section>
+        <section id="preview_image">
+            <div id="lienzo"></div>
+
+        </section>
+
+        <section id="consola">
+            <section id="app-title">
+                <p id="subtitulo">Foto lienzo</p><br>
+                <p id="subtitulo-2">Personalizado</p>
+            </section>
+            <section id="consola-preview">
+
+                <form action="#" method="POST">
+                    Seleciona tu Foto:<br>
+                    <h6>Formatos que soporta: .jpg, .png</h6>
+                    <input type="file" name="myFile" id="file-send" multiple>
+                    <p id="preview-link"></p> <br> Escoge la Medida que desees:<br>
+
+                    <select name="cars">
+                    <option id="m1" value="m1">90cm (ancho) x 90cm (alto)</option>
+                    <option id="m2" value="m2">60cm (ancho) x 90cm (alto)</option>
+                    <option id="m3" value="m3">40cm (ancho) x 60cm (alto)</option>
+                    <option id="m4" value="m4">40cm (ancho) x 40cm (alto)</option>
+                    <option id="m5" value="m5">30cm (ancho) x 40cm (alto)</option>
+                    </select><br>
+                    <input type="submit" id="submit" value="COMPRAR!">
+
+                </form>
+
+            </section>
+            <script src="script-js/lienzos.js"></script>
+            <section id="total-container">
+                <p>Total a Pagar:&nbsp; &nbsp; </p>
+                <div id="total-pagar">
+                    <p id="precio-total-text">$0.00</p>
+                </div>
+            </section>
+            <script src="script-js/lienzos.js"></script>
+            <script src="script-js/script.js"></script>
+        </section>
+    </div>
+</body>
+
+</html>

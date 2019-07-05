@@ -1,0 +1,69 @@
+#header-prin {
+    background-color: rgb(68, 68, 68);
+    color: aliceblue;
+}
+
+#mRight {
+    text-align: right;
+}
+
+#mRight a {
+    color: aliceblue;
+    text-decoration: none;
+}
+
+.card-img-overlay {
+    text-align: center;
+    background-color: rgba(56, 44, 44, 0.671);
+}
+
+.card {
+    border-radius: 0px;
+    padding: 0px;
+}
+
+#navBarHeader {
+    background-color: rgb(68, 68, 68);
+    color: whitesmoke;
+}
+
+#navBarHeader .nav-link {
+    color: whitesmoke;
+    font-weight: bold;
+}
+
+#secondNav {
+    display: flex;
+    justify-content: space-around;
+}
+
+@media (max-width: 360px) {
+    #secondNav {
+        display: block;
+    }
+}
+
+.liBotts {
+    display: flex;
+    justify-content: stretch;
+    align-items: center;
+}
+
+.liBotts a {
+    color: orangered;
+    margin-left: 15px;
+}
+
+.boxKit {
+    width: 20px;
+    height: 20px;
+    background-color: rgb(255, 38, 0);
+}
+
+#fotolienzos {
+    color: orangered;
+}
+
+#lienz {
+    background-color: rgb(228, 228, 228);
+}

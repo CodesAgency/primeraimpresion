@@ -1,0 +1,147 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Oswald', sans-serif;
+}
+
+#title {
+    margin: auto;
+    text-align: center;
+    padding: 15px;
+}
+
+.container {
+    padding: 10px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    height: auto;
+}
+
+h2 {
+    font-family: 'Overpass', sans-serif;
+    text-align: center;
+}
+
+#menu {
+    width: 65px;
+    height: 500px;
+    background-color: rgb(19, 34, 34);
+}
+
+#preview_image {
+    width: 50%;
+    height: 500px;
+    background-image: url(../app-web/bg/bg.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#consola {
+    width: 35%;
+    height: 500px;
+    background-color: rgba(255, 238, 223, 0.301);
+}
+
+#lienzo {
+    margin-top: -150px;
+    width: 250px;
+    height: 250px;
+    box-shadow: -5px 5px 10px rgb(51, 51, 51);
+    background-color: whitesmoke;
+    transition: ease all 0.2s;
+    background-image: url(../app-web/bg/lienzo.jpg);
+    background-size: 100% 100%;
+}
+
+#lienzo:hover {
+    width: 255px;
+    height: 255px;
+    transition: ease all 0.2s;
+}
+
+#app-title {
+    padding: 15px;
+}
+
+#subtitulo {
+    font-size: 30pt;
+    color: rgb(88, 88, 88);
+}
+
+#subtitulo-2 {
+    font-size: 14pt;
+    color: rgb(255, 94, 20);
+    margin-top: -35px;
+}
+
+#consola-preview {
+    width: 94%;
+    height: 300px;
+    padding: 15px;
+    border: solid 3px orangered;
+    margin: auto;
+    border-radius: 8px;
+}
+
+#submit {
+    background-color: orangered;
+    width: 120px;
+    height: 40px;
+    border: none;
+    cursor: pointer;
+    transition: ease all 0.4s;
+    color: aliceblue;
+    font-size: 14PT;
+}
+
+#submit:hover {
+    background-color: orange;
+    transition: ease all 0.5s;
+    color: rgb(44, 44, 44);
+}
+
+input {
+    margin-top: 7px;
+}
+
+#total-container {
+    width: auto;
+    height: auto;
+    margin: auto;
+    margin-left: 200px;
+    display: flex;
+    justify-content: first baseline;
+}
+
+#total-pagar {
+    width: 120px;
+    height: 45px;
+    background-color: orangered;
+}
+
+#precio-total-text {
+    font-size: 28pt;
+    color: whitesmoke;
+    text-align: center;
+    margin-top: -10px;
+}
+
+#file-send {
+    height: 40px;
+}
+
+#preview-link {
+    color: black;
+    transition: ease all 0.3s;
+}
+
+#preview-link:hover {
+    color: rgb(175, 99, 0);
+    transition: ease all 0.3s;
+}

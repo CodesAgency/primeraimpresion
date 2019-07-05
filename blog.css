@@ -1,0 +1,167 @@
+#contBlog {
+    background-image: url(images/absNar.png);
+    height: auto;
+    padding: 15px;
+    background-size: 100% auto;
+}
+
+@media (max-width:997px) {
+    #contBlog {
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+}
+
+#contBlogCent {
+    height: auto;
+    width: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#noteBlog {
+    width: 345px;
+    background-color: rgb(37, 37, 37);
+    color: whitesmoke;
+    padding: 25px;
+}
+
+#noteBlog2 {
+    box-shadow: 5px 5px 12px rgba(34, 34, 34, 0.623);
+}
+
+#noteBlog3 {
+    box-shadow: 5px 5px 12px rgba(34, 34, 34, 0.623);
+}
+
+#folowBlog {
+    color: orangered;
+}
+
+#hrBlog {
+    height: 2px;
+    border: 0;
+    color: #666;
+    background-color: #ffbb00;
+    width: 100%;
+}
+
+footer {
+    height: auto;
+    background-color: rgb(37, 37, 37);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 25px;
+    text-align: center;
+}
+
+.notes {
+    margin-top: 10px;
+}
+
+#telefonoFoot {
+    color: white;
+}
+
+#sitesIco {
+    color: white;
+}
+
+#redes {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#whatsapp {
+    display: flex;
+    justify-content: stretch;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.footerBox {
+    width: 320px;
+}
+
+#phoneIco {
+    margin-top: -15px;
+    margin-right: 10px;
+}
+
+#direccion {
+    display: flex;
+    justify-content: stretch;
+    align-items: center;
+    margin-top: 10px;
+}
+
+#siteIcos {
+    margin-top: -10px;
+    margin-right: 10px;
+}
+
+#emailDirec {
+    display: flex;
+    justify-content: stretch;
+    align-items: center;
+    margin-top: 10px;
+}
+
+#emailDir {
+    color: white;
+}
+
+#emailDirecs {
+    margin-top: -12px;
+    margin-right: 10px;
+}
+
+#support {
+    color: white;
+    text-decoration: none;
+}
+
+#suscribs {
+    width: 130px;
+}
+
+#email {
+    padding: 7px;
+    width: 100%;
+}
+
+#supports {
+    color: orangered;
+    font-size: 18pt;
+}
+
+#metodPagos {
+    color: orangered;
+    font-size: 18pt;
+}
+
+#footerBox3 {
+    text-align: center;
+}
+
+#support {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#suscribs {
+    float: right;
+}
+
+#METpAG {
+    color: whitesmoke;
+    text-align: justify;
+}
