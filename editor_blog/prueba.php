@@ -1,5 +1,5 @@
 <?php 
 	
-	echo $_POST['txt-content'];
+	echo $_REQUEST['txt-content'];
 
  ?>

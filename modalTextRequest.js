@@ -13,7 +13,6 @@ class createElementDiv {
         request.appendChild(div);
         div.style.padding = "15px";
 
-
         let input = document.createElement(this.c);
         input.setAttribute('rows', this.d);
         input.setAttribute('cols', this.e);
@@ -30,7 +29,8 @@ class createElementDiv {
         div.style.display = "flex";
         div.style.flexDirection = "column";
         div.style.alignItems = "start";
+        input.style.padding = "15px";
     }
 }
 
-let create = new createElementDiv('div', 'requestMean', 'textarea', '4', '70');
+let create = new createElementDiv('div', 'requestMean', 'textarea', '4', '75');

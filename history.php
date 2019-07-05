@@ -39,54 +39,29 @@
         }
     </style>
 </head>
-
 <body>
     <div class="container-fluid">
-        
         <div class="container mt-4" id="contenido">
-            <section id="banner">
-        
-            </section>
+            <?php require_once('banner.php') ?>
             <section class="container mt-4 mb-4">
-                <h2><strong>¿Qué es el branding?</strong></h2>
-                <h5>Subtítulo de lo que quiera con relación a ltítulo.</h5>
+                <h2><strong><?php require_once('title.php') ?></strong></h2>
+                <h5><?php require_once('subtitle.php')?></h5>
                 <div class="paragraph">
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                         Possimus corporis quis delectus, eveniet soluta unde totam beatae voluptates saepe? 
-                         Ducimus, asperiores quae accusamus eveniet deleniti reiciendis ullam dicta? Enim, ut.
-                         
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                         Possimus corporis quis delectus, eveniet soluta unde totam beatae voluptates saepe? 
-                         Ducimus, asperiores quae accusamus eveniet deleniti reiciendis ullam dicta? Enim, ut.<br>
-                         
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                         Possimus corporis quis delectus, eveniet soluta unde totam beatae voluptates saepe? 
-                         Ducimus, asperiores quae accusamus eveniet deleniti reiciendis ullam dicta? Enim, ut.
-                         <a href="#">Revisar producto en e-Shop</a>
-                    </p>
                     <button class="btn btn-warning" id="commentHistory">
                         Comentar Historia
                     </button>
                 </div>
-                
             </section>
             <section class="container-fluid mt-4 mb-4 p-4">
                 <?php 
                     require_once('publicComent.php');
-                    
                 ?>
-                <div id="request">
-                
-                </div>
-            </section>
-            
+                <div id="request"></div>
+            </section>            
         </div>
     </div>
 </body>
-
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-
 </html>

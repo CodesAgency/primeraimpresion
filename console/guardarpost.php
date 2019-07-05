@@ -8,8 +8,8 @@ $registros=mysqli_query($conexion,"Select * from post order by id DESC LIMIT 1")
 
 $titulo = $_REQUEST['titulo'];
 $descripcion_breve = $_REQUEST['descripcion_breve'];
-$contenido = htmlentities($_REQUEST['txt-content']);
-echo $_REQUEST['txt-content'].$contenido;
+$contenido = htmlentities($_POST['txt-contentent']);
+echo $_POST['txt-contentent'].$contenido;
 $videoUrl = $_REQUEST['video'];
 $status = $_REQUEST['status'];
 $categoria_id = $_REQUEST['categoria_id'];

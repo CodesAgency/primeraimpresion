@@ -42,16 +42,12 @@ $categoria=mysqli_query($conexion,"select * from categoria") or
                 <form action="guardarpost.php" method="post" id="frm-test" target="_top" enctype="multipart/form-data">
                     <input type="text" name="titulo" title="Titulo" placeholder="Titulo"/>
                     <input type="text" name="descripcion_breve" title="descripcion" placeholder="Descripción"/>
-                    <div class="form-group">
-                        
-                    </div>
+                    <div class="form-group"></div>
                     <a href="#demo" class="btn btn-info" data-toggle="collapse">Comentario</a>
                     <div class="container"> 
                           <div id="demo" class="collapse">
-
-                             <textarea id="txt-content" name="txt-content"></textarea>
-
-                        </div>
+                             <textarea id="txt-content" name="txt-contentent"></textarea>
+                    </div>
                     </div>
                     <br>                    
                     <input type="text" name="video" title="Video" placeholder="video"/>
@@ -67,6 +63,7 @@ $categoria=mysqli_query($conexion,"select * from categoria") or
                     <select name="categoria_id">
                         <option value="#">Categoria</option>
                         <?php
+                        
                         if ($cat=mysqli_fetch_array($categoria)){
                         ?>
                         <option value="<?php echo $cat['id'];?>"><?php echo utf8_encode($cat['nombre']);?></option>
@@ -76,12 +73,15 @@ $categoria=mysqli_query($conexion,"select * from categoria") or
                     </select>
                     <br>
                     Imagen Principal
-                    <input name="imagen" type="file" maxlength="150">
+                    <input name="imagen" type="file" maxlength="150" id="file">
                     <input type="hidden" name="users_id" value="<?php echo $_REQUEST['idusers']?>">
                     <input type="submit" value="Agregar" name="enviar" style="cursor: pointer">
                 </form>
-
-            </div>
+                        <script>
+                            let file = document.getElementById('file');
+                            
+                        </script>
+            </div>  
         </div>
         
     </div>

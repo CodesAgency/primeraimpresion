@@ -9,7 +9,6 @@
     <script src="modalTextRequest.js"></script>
     <script>
         const responder = document.getElementById('responder');
-
         responder.addEventListener('click', showInputs)
         function showInputs(){
         create.createObject();
