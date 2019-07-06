@@ -10,7 +10,7 @@
 
 <div class="navbar navbar-inverse navbar-static-top">
 	<div id="navBarTop">
-    <div class="container" >
+    <div class="container">
         <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
@@ -25,7 +25,7 @@
           </a>
           <div class="nav-collapse" id="navBarMenu">
 			<?php
-                         $ci2=yii::app()->user->getState("cedula");
+                    $ci2=yii::app()->user->getState("cedula");
                     
                     include 'conexion3.php';
                     $registros=mysqli_query($conexion,"select * from users WHERE cedula='$ci2'") or

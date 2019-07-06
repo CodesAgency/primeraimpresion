@@ -138,7 +138,7 @@
                     <div class="card-body">
                         <h5 class="card-title"><?php echo $title[1]; ?></h5>
                         <p class="card-text"><?php  echo $descrip[1]; ?></p>
-                        <a href="history.php" class="btn btn-primary">Seguir leyendo</a>
+                        <a href="console/index.php?r=site/history" class="btn btn-primary">Seguir leyendo</a>
                     </div>
                 </div>
             </div>

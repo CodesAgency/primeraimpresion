@@ -78,7 +78,13 @@ else
 	<div class="container mt-4" id="contenido">
             <?php require_once('banner.php') ?>
             <section class="container mt-4 mb-4">
-                <h2>Lo siento No existe el post</strong></h2>
+                <h2>
+                    <strong>
+                        <figure>
+                            <img src="../images/hombre_write.png" alt="">
+                        </figure>
+                    </strong>
+                </h2>
                 <h5><?php require_once('subtitle.php')?></h5>
                 <div class="paragraph">
                     <button class="btn btn-warning" id="commentHistory">
