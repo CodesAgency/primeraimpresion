@@ -9,10 +9,7 @@ $registros=mysqli_query($conexion,"Select * from post order by id DESC LIMIT 1")
 
 $descripcion_breve = $_REQUEST['descripcion_breve'];
 
-$contenido = $_REQUEST['txt-content'];
-echo $_REQUEST['txt-content'].$contenido;
-$contenido = htmlentities($_POST['txt-contentent']);
-echo $_POST['txt-contentent'].$contenido;
+$contenido = $_REQUEST['txt-contentent'];
 
 $videoUrl = $_REQUEST['video'];
 $status = $_REQUEST['status'];
@@ -44,35 +41,57 @@ mysqli_query($conexion,"INSERT INTO post(id, titulo, descripcion_breve, contenid
 
 mysqli_close($conexion);
 
-// crear directorio
-if (isset($_POST["imagen"])) 
-	{
-        echo 'si hay imagen';
-	}else
-		{
-		echo 'no hay imagen';
-		}
-					
-					$Rando=$id;
-					$carpeta = './img/'.$Rando."/";
-					echo $carpeta;
-						if (!file_exists($carpeta)) {
-							mkdir($carpeta, 0777, true);
-							
-						}
-						
-$nombre = $_FILES['imagen']['name'];
-$nombrer = strtolower($nombre);
-$cd=$_FILES['imagen']['tmp_name'];
-$ruta = "img/" .$Rando."/". $_FILES['imagen']['name'];
-$destino = "img/".$nombrer;
-$resultado = @move_uploaded_file($_FILES["imagen"]["tmp_name"], $ruta);
-
-					
-					echo "Destino:".$destino."<br/>";
-					echo "CD:".$cd."<br/>";
-					echo "Nombre:".$nombre."<br/>";
-					echo "Nombrer:".$nombrer."<br/>";
 					
 					
 ?>
+
+<?php
+include 'conexion3.php';
+$categoria=mysqli_query($conexion,"select * from categoria") or
+  die("Problemas en el select:".mysqli_error($conexion));
+?>
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript" src="js/jquery-1.12.0.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/editor.js"></script>	
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/editor.css">
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('#txt-content').Editor();
+
+			$('#txt-content').Editor('setText', ['<p style="color:red;">Hola</p>']);
+
+			$('#btn-enviar').click(function(e){
+				e.preventDefault();
+				$('#txt-content').text($('#txt-content').Editor('getText'));
+				$('#frm-test').submit();				
+			});
+		});	
+	</script>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-12">  
+                <form action="guardarpost2.php" method="post" id="frm-test" enctype="multipart/form-data">                   
+                    
+                    <h2>Anexar Banner</h2>
+                    <input name="imagen" type="file" maxlength="150" id="file">
+                    <input type="hidden" name="id" value="<?php echo $id;?>">
+                    <input type="submit" class="btn btn-default" id="btn-enviar" value="Mostrar Resultado">
+                </form>
+                        <script>
+                            let file = document.getElementById('file');
+                        </script> 
+        </div>
+    </div>
+
+</body>
+
+</html>

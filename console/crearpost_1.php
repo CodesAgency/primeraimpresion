@@ -34,7 +34,7 @@ $categoria=mysqli_query($conexion,"select * from categoria") or
         <div class="row">
             <div class="col-sm-12">
                 
-                <form action="guardarpost.php" method="post" id="frm-test">
+                <form action="guardarpost.php" method="post" id="frm-test" target="_top" enctype="multipart/form-data">
                     <input type="text" name="titulo" title="Titulo" placeholder="Titulo"/>
                     <input type="text" name="descripcion_breve" title="descripcion" placeholder="Descripción"/>
                     <div class="form-group"></div>
@@ -68,7 +68,7 @@ $categoria=mysqli_query($conexion,"select * from categoria") or
                     </select>
                     <br>
                     Imagen Principal
-                    
+                    <input name="imagen" type="file" maxlength="150" id="file">
                     <input type="hidden" name="users_id" value="<?php echo $_REQUEST['idusers']?>">
                     <input type="submit" class="btn btn-default" id="btn-enviar" value="Mostrar Resultado">
                 </form>

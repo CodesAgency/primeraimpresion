@@ -69,3 +69,67 @@ Stack trace:
 REQUEST_URI=/primeraimpresion/console/index.php?r=site/history
 HTTP_REFERER=http://localhost/primeraimpresion/blog.php
 ---
+2019/07/05 23:32:08 [error] [exception.CHttpException.404] CHttpException: No es posible resolver la solicitud "history" in C:\xampp\htdocs\nuevospro\primeraimpresion\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\nuevospro\primeraimpresion\framework\web\CWebApplication.php(141): CWebApplication->runController('history')
+#1 C:\xampp\htdocs\nuevospro\primeraimpresion\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\nuevospro\primeraimpresion\console\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/nuevospro/primeraimpresion/console/index.php?r=history
+---
+2019/07/05 23:32:56 [error] [exception.CHttpException.404] CHttpException: El sistema no ha podido encontrar la acción "admin" solicitada. in C:\xampp\htdocs\nuevospro\primeraimpresion\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\nuevospro\primeraimpresion\framework\web\CController.php(270): CController->missingAction('admin')
+#1 C:\xampp\htdocs\nuevospro\primeraimpresion\framework\web\CWebApplication.php(282): CController->run('admin')
+#2 C:\xampp\htdocs\nuevospro\primeraimpresion\framework\web\CWebApplication.php(141): CWebApplication->runController('site/admin')
+#3 C:\xampp\htdocs\nuevospro\primeraimpresion\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\nuevospro\primeraimpresion\console\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/nuevospro/primeraimpresion/console/index.php?r=site/admin
+---
+2019/07/05 23:33:06 [error] [exception.CHttpException.400] CHttpException: Su solicitud es inválida. in C:\xampp\htdocs\nuevospro\primeraimpresion\framework\web\CController.php:336
+Stack trace:
+#0 C:\xampp\htdocs\nuevospro\primeraimpresion\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\xampp\htdocs\nuevospro\primeraimpresion\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#2 C:\xampp\htdocs\nuevospro\primeraimpresion\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 C:\xampp\htdocs\nuevospro\primeraimpresion\framework\web\CWebApplication.php(282): CController->run('history')
+#4 C:\xampp\htdocs\nuevospro\primeraimpresion\framework\web\CWebApplication.php(141): CWebApplication->runController('site/history')
+#5 C:\xampp\htdocs\nuevospro\primeraimpresion\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#6 C:\xampp\htdocs\nuevospro\primeraimpresion\console\index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/nuevospro/primeraimpresion/console/index.php?r=site/history
+---
+2019/07/05 23:34:30 [error] [exception.CHttpException.400] CHttpException: Su solicitud es inválida. in C:\xampp\htdocs\nuevospro\primeraimpresion\framework\web\CController.php:336
+Stack trace:
+#0 C:\xampp\htdocs\nuevospro\primeraimpresion\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\xampp\htdocs\nuevospro\primeraimpresion\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#2 C:\xampp\htdocs\nuevospro\primeraimpresion\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 C:\xampp\htdocs\nuevospro\primeraimpresion\framework\web\CWebApplication.php(282): CController->run('history')
+#4 C:\xampp\htdocs\nuevospro\primeraimpresion\framework\web\CWebApplication.php(141): CWebApplication->runController('site/history')
+#5 C:\xampp\htdocs\nuevospro\primeraimpresion\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#6 C:\xampp\htdocs\nuevospro\primeraimpresion\console\index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/nuevospro/primeraimpresion/console/index.php?r=site/history
+---
+2019/07/05 23:34:32 [error] [exception.CHttpException.404] CHttpException: El sistema no ha podido encontrar la acción "admin" solicitada. in C:\xampp\htdocs\nuevospro\primeraimpresion\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\nuevospro\primeraimpresion\framework\web\CController.php(270): CController->missingAction('admin')
+#1 C:\xampp\htdocs\nuevospro\primeraimpresion\framework\web\CWebApplication.php(282): CController->run('admin')
+#2 C:\xampp\htdocs\nuevospro\primeraimpresion\framework\web\CWebApplication.php(141): CWebApplication->runController('site/admin')
+#3 C:\xampp\htdocs\nuevospro\primeraimpresion\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\nuevospro\primeraimpresion\console\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/nuevospro/primeraimpresion/console/index.php?r=site/admin
+---
+2019/07/06 16:29:36 [error] [exception.CHttpException.400] CHttpException: Su solicitud es inválida. in C:\xampp\htdocs\nuevospro\primeraimpresion\framework\web\CController.php:336
+Stack trace:
+#0 C:\xampp\htdocs\nuevospro\primeraimpresion\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\xampp\htdocs\nuevospro\primeraimpresion\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#2 C:\xampp\htdocs\nuevospro\primeraimpresion\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 C:\xampp\htdocs\nuevospro\primeraimpresion\framework\web\CWebApplication.php(282): CController->run('history')
+#4 C:\xampp\htdocs\nuevospro\primeraimpresion\framework\web\CWebApplication.php(141): CWebApplication->runController('site/history')
+#5 C:\xampp\htdocs\nuevospro\primeraimpresion\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#6 C:\xampp\htdocs\nuevospro\primeraimpresion\console\index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/nuevospro/primeraimpresion/console/index.php?r=site/history
+---
