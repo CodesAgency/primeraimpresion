@@ -27,22 +27,61 @@ $categoria=mysqli_query($conexion,"select * from categoria") or
 			});
 		});	
 	</script>
+    <style>
+        #form-box{
+            padding: 25px;
+            border: solid 0.5px white;
+            border-radius: 10px;
+            box-shadow: 2px 5px 15px rgba(10,10,10,0.5);
+            background-color: white;
+            margin: 15px;
+            width: 80%;
+            background-color: whitesmoke;
+        }
+        input{
+            width: 100%;
+            padding: 15px;
+            border-radius: 10px;
+            border: none;
+        }
+        #inputsType{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        #editorCodec{
+            width: 70%;
+        }
+
+        #btn-enviar{
+            width: 250px;
+            padding: 15px;
+            transition: ease all 0.2s;
+        }
+        #btn-enviar:hover{
+            transition: ease all 0.4s;
+            background-color: #777466  ;
+            font-size: 14pt;
+            box-shadow: 2px 5px 15px rgba(10,10,10,0.5);;
+        }
+    </style>
 </head>
 
 <body>
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-sm-12">
-                
+             <div id="form-box">
+             
                 <form action="guardarpost.php" method="post" id="frm-test">
-                    <input type="text" name="titulo" title="Titulo" placeholder="Titulo"/>
-                    <input type="text" name="descripcion_breve" title="descripcion" placeholder="Descripción"/>
-                    <div class="form-group"></div>
-                    <a href="#demo" class="btn btn-info" data-toggle="collapse">Comentario</a>
-                    <div class="container"> 
+                    <div id="inputsType">
+                    <label for="titulo"><strong>Ingrese el Titular:</strong> </label>
+                    <label for="titulo" id="titleLabel">  <label>
+                    <input type="text" name="titulo" title="Titulo" placeholder="Titulo" id="titulo"/>
+                    <input type="text" name="descripcion_breve" title="descripcion" placeholder="Subtítulo" id="subtitulo"/>
+       
+                    <a href="#demo" class="btn btn-info" data-toggle="collapse">Describir Historia</a>
+                    <div class="container" id="editorCodec"> 
                           <div id="demo" class="collapse">
                              <textarea id="txt-content" name="txt-contentent"></textarea>
-                    </div>
+                            </div>
                     </div>
                     <br>                    
                     <input type="text" name="video" title="Video" placeholder="video"/>
@@ -67,19 +106,13 @@ $categoria=mysqli_query($conexion,"select * from categoria") or
                         ?>
                     </select>
                     <br>
-                    Imagen Principal
-                    
                     <input type="hidden" name="users_id" value="<?php echo $_REQUEST['idusers']?>">
-                    <input type="submit" class="btn btn-default" id="btn-enviar" value="Mostrar Resultado">
+                    <input type="submit" class="btn btn-warning" id="btn-enviar" value="PUBLICAR">
+                    <script type="text/javascript" src="errorClass.js">
+                    </script>
+                    </div>
                 </form>
-                        <script>
-                            let file = document.getElementById('file');
-                            
-                        </script>
-            </div>  
         </div>
-        
-    </div>
 
 
     
