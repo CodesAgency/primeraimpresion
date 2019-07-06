@@ -2,6 +2,7 @@
 include 'conexion3.php';
 /* @var $this SiteController */
 echo $id=yii::app()->user->getState("id");
+echo $id=yii::app()->user->getState("id");
 
 
         
