@@ -2,12 +2,25 @@ let titleLabel = document.getElementById('titleLabel');
 let titulo = document.getElementById('titulo');
 let subtitulo = document.getElementById('subtitulo');
 let video = document.getElementById('video');
+let subtituloLabel = document.getElementById('subtituloLabel');
+let inputRequerid = document.getElementById('inputRequerid');
+let btn_enviar = document.getElementById('btn-enviar');
 //"url('ul/redX.png')"
 
 titulo.addEventListener('blur', showErrorT);
 subtitulo.addEventListener('blur', showErrorSubT);
 video.addEventListener('blur', showErrorVideo);
+btn_enviar.addEventListener('click', btnEnviarRequeridCustom);
 
+function btnEnviarRequeridCustom() {
+    alert('debesa rellenar esto si o si');
+}
+
+function ainputRequerid(obj1) {
+    if (obj1.value == "") {
+        alert('debesa rellenar esto si o si');
+    }
+}
 
 function showErrorT() {
     if (titulo.value == "") {
@@ -27,6 +40,11 @@ function showErrorSubT() {
     if (subtitulo.value == "") {
         let showErrorTaskSub = new recocnocimiento(subtitulo, "url('ul/orangeX.png')")
         showErrorTaskSub.showError();
+        subtituloLabel.innerHTML = "Este campo no es muy importante, por eso la X es de color naranja su rquerimiento es optativo depende ti.";
+        subtituloLabel.style.color = "orange";
+        subtituloLabel.style.fontSize = "10px";
+        subtituloLabel.style.textAlign = "left";
+
     } else {
         let ShowOkSub = new recocnocimiento(subtitulo, "url('ul/greenV.png')")
         ShowOkSub.showOk();
@@ -56,6 +74,7 @@ class recocnocimiento {
         this.objValueA.style.backgroundSize = "15px 15px";
         this.objValueA.style.backgroundPosition = "98% 15px";
     }
+
     showOk() {
         this.objValueA.style.backgroundImage = this.objValueB;
         this.objValueA.style.backgroundRepeat = "no-repeat";

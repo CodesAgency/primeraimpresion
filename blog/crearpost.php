@@ -68,15 +68,14 @@ $categoria=mysqli_query($conexion,"select * from categoria") or
 </head>
 
 <body>
-             <div id="form-box">
-             
+        <div id="form-box">
                 <form action="guardarpost.php" method="post" id="frm-test">
                     <div id="inputsType">
                     <label for="titulo"><strong>Ingrese el Titular:</strong> </label>
                     <input type="text" name="titulo" title="Titulo" placeholder="Titulo" id="titulo"/>
                     <p id="titleLabel"></p>
                     <input type="text" name="descripcion_breve" title="descripcion" placeholder="Subtítulo" id="subtitulo"/>
-       
+                    <p id="subtituloLabel"></p>
                     <a href="#demo" class="btn btn-info" data-toggle="collapse">Describir Historia</a>
                     <div class="container" id="editorCodec"> 
                         <div id="demo" class="collapse">
@@ -90,14 +89,14 @@ $categoria=mysqli_query($conexion,"select * from categoria") or
                            <td><p>Estado:</p></td>
                        </tr>
                        <tr>
-                           <td>Activo<input type="radio" name="status" value="1"></td><td>Inactivo<input type="radio" name="status" value="0"></td>
+                           <td>Activo<input type="radio" name="status" value="1"></td><td>Inactivo<input type="radio" name="status" value="0" id="inputRequerid" requerid></td>
                        </tr>
+                       <p id=""></p>
                    </table>
                     <br>
                     <select name="categoria_id">
                         <option value="#">Categoria</option>
                         <?php
-                        
                         if ($cat=mysqli_fetch_array($categoria)){
                         ?>
                         <option value="<?php echo $cat['id'];?>"><?php echo utf8_encode($cat['nombre']);?></option>
