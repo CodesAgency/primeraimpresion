@@ -2,10 +2,9 @@
 include 'conexion3.php';
 /* @var $this SiteController */
 
-echo $id=yii::app()->user->getState("id");      
-
-echo $id=yii::app()->user->getState("id");
-echo $id=yii::app()->user->getState("id");
+$id=yii::app()->user->getState("id");
+$id=yii::app()->user->getState("id");
+$id=yii::app()->user->getState("id");
 
 
 ?>
@@ -46,17 +45,23 @@ echo $id=yii::app()->user->getState("id");
 </head>
 <body>
 <div class="container-fluid">
-	<?php
-	$registros=mysqli_query($conexion,"select * from post where id='$_REQUEST[id]'") or
-   die("Problemas en el select:".mysqli_error($conexion));
+<?php
+    $registros=mysqli_query($conexion,"select * from post where id='$_REQUEST[id]'") or
+    die("Problemas en el select:".mysqli_error($conexion));
 if ($reg=mysqli_fetch_array($registros))
 {
 	?>
 	<div class="container mt-4" id="contenido">
-            <?php echo 'Banner'; ?>
+            <img src="img/<?php echo $reg['id'];?>/1.jpg" width="50%" height="auto">
             <section class="container mt-4 mb-4">
-                <h2><strong><?php 'Titulo' ?></strong></h2>
-                <h5><?php echo 'sub-titulo'?></h5>
+                <h2><strong><?php echo $reg['titulo'];?></strong></h2>
+                <h5><?php echo $reg['descripcion_breve'];?></h5>
+                <div class="container">
+                    <?php echo $reg['contenido'];?>
+                    
+                    
+                </div>
+                <br>
                 <div class="paragraph">
                     <button class="btn btn-warning" id="commentHistory">
                         Comentar Historia
@@ -69,6 +74,10 @@ if ($reg=mysqli_fetch_array($registros))
                 ?>
                 <div id="request"></div>
             </section>
+    </div>
+    <div>
+        <iframe width="560" height="315" src="<?php echo $reg['videoUrl']?>" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <?php echo $reg['videoUrl']?>
     </div>
 	<?php
 

@@ -57,7 +57,12 @@ $this->breadcrumbs=array(
         <div class="row buttons">
             <?php echo CHtml::submitButton('Iniciar',array('class'=>'btn btn btn-primary')); ?>
         </div>
-    
+    <br>
+               <div class="row buttons">
+            <a href="index.php?r=registro/create">Registrar</a>
+	</div>
+        
+
     <?php $this->endWidget(); ?>
     </div><!-- form -->
 

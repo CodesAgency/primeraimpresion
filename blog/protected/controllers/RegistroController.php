@@ -71,7 +71,7 @@ class RegistroController extends Controller
 		{
 			$model->attributes=$_POST['Users'];
 			if($model->save())
-				$this->redirect(array('view','id'=>$model->id));
+				$this->redirect('index.php?r=site/login','id');
 		}
 
 		$this->render('create',array(
