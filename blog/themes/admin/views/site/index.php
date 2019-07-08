@@ -13,11 +13,9 @@ include 'conexion3.php';
         #formSubcirb {
             width: 300px;
         }
-        
         #paragraphFooter {
             color: whitesmoke;
         }
-        
         .jumbotron {
             background-image: url(imagesBlog/orange.jpg);
             background-size: 100% 100%;
@@ -29,7 +27,6 @@ include 'conexion3.php';
             border-radius: 0px 7px 7px 0px;
             background-color: orangered;
         }
-        
         #histories {
             display: flex;
             justify-content: center;
@@ -46,7 +43,6 @@ include 'conexion3.php';
             border: solid 2px orangered;
             transition: ease all 0.3s; 
         }
-        
         #contHistories {
             display: flex;
             justify-content: space-evenly;
@@ -54,7 +50,6 @@ include 'conexion3.php';
             flex-wrap: wrap;
             margin-top: -150px;
         }
-        
         #menublogLateral {
             width: 320px;
         }
@@ -91,6 +86,6 @@ while ($reg=mysqli_fetch_array($registros))
 }
     
     ?>
-    </div>     
+</div>     
 </body>
 </html>
