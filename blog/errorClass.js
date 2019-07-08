@@ -15,9 +15,13 @@ btn_enviar.addEventListener("click", btn_enviar_fx);
 
 function btn_enviar_fx() {
     let inputRequerid = document.getElementById('inputRequerid');
-    if (inputRequerid.checked = "false") {
+    if (inputRequerid.checked = "true") {
+        console.log('enviando datos');
+    } else {
+
         location.href = "http://localhost/primeraimpresion/blog/index.php?r=post/create";
         alert('SI USTED NO CLIKEO EL ESTADO POR DEFAULT EL ESTADO SALDRÁ INACTIVO');
+
     }
 }
 

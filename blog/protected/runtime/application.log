@@ -200,3 +200,13 @@ Stack trace:
 #9 C:\xampp\htdocs\nuevospro\primeraimpresion\framework\base\CApplication.php(185): CWebApplication->processRequest()
 #10 C:\xampp\htdocs\nuevospro\primeraimpresion\blog\index.php(13): CWebApplication->run()
 REQUEST_URI=/nuevospro/primeraimpresion/blog/index.php?r=site/index
+2019/07/08 20:34:38 [error] [exception.CHttpException.404] CHttpException: El sistema no ha podido encontrar la acción "inicio" solicitada. in C:\xampp\htdocs\primeraimpresion\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\primeraimpresion\framework\web\CController.php(270): CController->missingAction('inicio')
+#1 C:\xampp\htdocs\primeraimpresion\framework\web\CWebApplication.php(282): CController->run('inicio')
+#2 C:\xampp\htdocs\primeraimpresion\framework\web\CWebApplication.php(141): CWebApplication->runController('post/inicio')
+#3 C:\xampp\htdocs\primeraimpresion\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\primeraimpresion\blog\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/primeraimpresion/blog/index.php?r=post/inicio
+---
