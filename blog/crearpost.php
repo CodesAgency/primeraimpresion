@@ -47,7 +47,7 @@ $categoria=mysqli_query($conexion,"select * from categoria") or
         #inputsType{
             display: flex;
             flex-direction: column;
-            align-items: center;
+            align-items: start;
         }
         #editorCodec{
             width: 70%;
@@ -73,18 +73,18 @@ $categoria=mysqli_query($conexion,"select * from categoria") or
                 <form action="guardarpost.php" method="post" id="frm-test">
                     <div id="inputsType">
                     <label for="titulo"><strong>Ingrese el Titular:</strong> </label>
-                    <label for="titulo" id="titleLabel">  <label>
                     <input type="text" name="titulo" title="Titulo" placeholder="Titulo" id="titulo"/>
+                    <p id="titleLabel"></p>
                     <input type="text" name="descripcion_breve" title="descripcion" placeholder="Subtítulo" id="subtitulo"/>
        
                     <a href="#demo" class="btn btn-info" data-toggle="collapse">Describir Historia</a>
                     <div class="container" id="editorCodec"> 
-                          <div id="demo" class="collapse">
-                             <textarea id="txt-content" name="txt-contentent"></textarea>
-                            </div>
+                        <div id="demo" class="collapse">
+                           <textarea id="txt-content" name="txt-contentent"></textarea>
+                        </div>
                     </div>
-                    <br>                    
-                    <input type="text" name="video" title="Video" placeholder="video"/>
+                    <br>
+                    <input type="text" name="video" title="Video" placeholder="video" id="video"/>
                    <table>
                        <tr>
                            <td><p>Estado:</p></td>

@@ -2,8 +2,7 @@
 <?php
         
         $title =[
-            "1" => "¿Qué es el Branding?",
-            "2" => "Tendencia de Diseño Gráfico 2019",
+            "1" => "¿Qué es el Branding?"
         ];
         $descrip =[
             "1" => "El branding, entiéndase abreviadamente como la <strong>gestión de las marcas,</strong> se ha convertido en uno de esos tópicos de los que muchos...",
