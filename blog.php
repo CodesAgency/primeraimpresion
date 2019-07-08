@@ -78,7 +78,7 @@
                         <a class="nav-link" href="#">Website <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="./console/index.php?r=site/login">Iniciar Sesión</a>
+                        <a class="nav-link" href="./blog/index.php?r=site/login">Iniciar Sesión</a>
                     </li>
                 </ul>
                 <form class="form-inline my-2 my-lg-0">
@@ -113,7 +113,6 @@
     <div id="menublogLateral">
         <div id="closeSubMen">
             <img src="images/close3.png" id="closeSubMenu" width="15px" height="auto" alt="">
-
         </div>
         <script>
         </script>
