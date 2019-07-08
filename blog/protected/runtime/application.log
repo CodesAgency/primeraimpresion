@@ -200,3 +200,54 @@ Stack trace:
 #9 C:\xampp\htdocs\nuevospro\primeraimpresion\framework\base\CApplication.php(185): CWebApplication->processRequest()
 #10 C:\xampp\htdocs\nuevospro\primeraimpresion\blog\index.php(13): CWebApplication->run()
 REQUEST_URI=/nuevospro/primeraimpresion/blog/index.php?r=site/index
+2019/07/08 21:43:24 [error] [php] Undefined index: cideo (C:\xampp\htdocs\nuevospro\primeraimpresion\blog\protected\views\site\history.php:79)
+Stack trace:
+#0 C:\xampp\htdocs\nuevospro\primeraimpresion\framework\web\CController.php(869): SiteController->renderFile()
+#1 C:\xampp\htdocs\nuevospro\primeraimpresion\framework\web\CController.php(782): SiteController->renderPartial()
+#2 C:\xampp\htdocs\nuevospro\primeraimpresion\blog\protected\controllers\SiteController.php(38): SiteController->render()
+#3 unknown(0): SiteController->actionhistory()
+#4 C:\xampp\htdocs\nuevospro\primeraimpresion\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs()
+#5 C:\xampp\htdocs\nuevospro\primeraimpresion\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#6 C:\xampp\htdocs\nuevospro\primeraimpresion\framework\web\CController.php(308): CInlineAction->runWithParams()
+#7 C:\xampp\htdocs\nuevospro\primeraimpresion\framework\web\CController.php(286): SiteController->runAction()
+#8 C:\xampp\htdocs\nuevospro\primeraimpresion\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#9 C:\xampp\htdocs\nuevospro\primeraimpresion\framework\web\CWebApplication.php(282): SiteController->run()
+#10 C:\xampp\htdocs\nuevospro\primeraimpresion\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#11 C:\xampp\htdocs\nuevospro\primeraimpresion\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#12 C:\xampp\htdocs\nuevospro\primeraimpresion\blog\index.php(13): CWebApplication->run()
+REQUEST_URI=/nuevospro/primeraimpresion/blog/index.php?r=site/history&id=5
+2019/07/08 21:43:32 [error] [php] Undefined index: video (C:\xampp\htdocs\nuevospro\primeraimpresion\blog\protected\views\site\history.php:79)
+Stack trace:
+#0 C:\xampp\htdocs\nuevospro\primeraimpresion\framework\web\CController.php(869): SiteController->renderFile()
+#1 C:\xampp\htdocs\nuevospro\primeraimpresion\framework\web\CController.php(782): SiteController->renderPartial()
+#2 C:\xampp\htdocs\nuevospro\primeraimpresion\blog\protected\controllers\SiteController.php(38): SiteController->render()
+#3 unknown(0): SiteController->actionhistory()
+#4 C:\xampp\htdocs\nuevospro\primeraimpresion\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs()
+#5 C:\xampp\htdocs\nuevospro\primeraimpresion\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#6 C:\xampp\htdocs\nuevospro\primeraimpresion\framework\web\CController.php(308): CInlineAction->runWithParams()
+#7 C:\xampp\htdocs\nuevospro\primeraimpresion\framework\web\CController.php(286): SiteController->runAction()
+#8 C:\xampp\htdocs\nuevospro\primeraimpresion\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#9 C:\xampp\htdocs\nuevospro\primeraimpresion\framework\web\CWebApplication.php(282): SiteController->run()
+#10 C:\xampp\htdocs\nuevospro\primeraimpresion\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#11 C:\xampp\htdocs\nuevospro\primeraimpresion\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#12 C:\xampp\htdocs\nuevospro\primeraimpresion\blog\index.php(13): CWebApplication->run()
+REQUEST_URI=/nuevospro/primeraimpresion/blog/index.php?r=site/history&id=5
+2019/07/08 21:59:17 [error] [exception.CHttpException.404] CHttpException: El sistema no ha podido encontrar la acción "registro" solicitada. in C:\xampp\htdocs\nuevospro\primeraimpresion\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\nuevospro\primeraimpresion\framework\web\CController.php(270): CController->missingAction('registro')
+#1 C:\xampp\htdocs\nuevospro\primeraimpresion\framework\web\CWebApplication.php(282): CController->run('registro')
+#2 C:\xampp\htdocs\nuevospro\primeraimpresion\framework\web\CWebApplication.php(141): CWebApplication->runController('site/registro')
+#3 C:\xampp\htdocs\nuevospro\primeraimpresion\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\nuevospro\primeraimpresion\blog\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/nuevospro/primeraimpresion/blog/index.php?r=site/registro
+---
+2019/07/08 22:06:56 [error] [exception.CHttpException.404] CHttpException: No es posible resolver la solicitud "../site/login" in C:\xampp\htdocs\nuevospro\primeraimpresion\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\nuevospro\primeraimpresion\framework\web\CWebApplication.php(141): CWebApplication->runController('../site/login')
+#1 C:\xampp\htdocs\nuevospro\primeraimpresion\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\nuevospro\primeraimpresion\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/nuevospro/primeraimpresion/blog/index.php?r=../site/login&id=3
+HTTP_REFERER=http://localhost:52/nuevospro/primeraimpresion/blog/index.php?r=registro/create
+---
