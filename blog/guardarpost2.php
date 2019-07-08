@@ -22,7 +22,7 @@ if (isset($_POST["imagen"]))
 $nombre = $_FILES['imagen']['name'];
 $nombrer = strtolower($nombre);
 $cd=$_FILES['imagen']['tmp_name'];
-$ruta = "img/" .$Rando."/". $_FILES['imagen']['name'];
+$ruta = "img/" .$Rando."/".'1.jpg';
 $destino = "img/".$nombrer;
 $resultado = @move_uploaded_file($_FILES["imagen"]["tmp_name"], $ruta);
 

@@ -172,3 +172,31 @@ Stack trace:
 REQUEST_URI=/primeraimpresion/console/index.php?r=site/history
 HTTP_REFERER=http://localhost/primeraimpresion/blog.php
 ---
+2019/07/08 20:05:24 [error] [php] Undefined variable: title (C:\xampp\htdocs\nuevospro\primeraimpresion\blog\themes\admin\views\site\index.php:67)
+Stack trace:
+#0 C:\xampp\htdocs\nuevospro\primeraimpresion\framework\web\CController.php(869): SiteController->renderFile()
+#1 C:\xampp\htdocs\nuevospro\primeraimpresion\framework\web\CController.php(782): SiteController->renderPartial()
+#2 C:\xampp\htdocs\nuevospro\primeraimpresion\blog\protected\controllers\SiteController.php(32): SiteController->render()
+#3 C:\xampp\htdocs\nuevospro\primeraimpresion\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#4 C:\xampp\htdocs\nuevospro\primeraimpresion\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\xampp\htdocs\nuevospro\primeraimpresion\framework\web\CController.php(286): SiteController->runAction()
+#6 C:\xampp\htdocs\nuevospro\primeraimpresion\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#7 C:\xampp\htdocs\nuevospro\primeraimpresion\framework\web\CWebApplication.php(282): SiteController->run()
+#8 C:\xampp\htdocs\nuevospro\primeraimpresion\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\xampp\htdocs\nuevospro\primeraimpresion\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\nuevospro\primeraimpresion\blog\index.php(13): CWebApplication->run()
+REQUEST_URI=/nuevospro/primeraimpresion/blog/index.php?r=site/index
+2019/07/08 20:05:52 [error] [php] Undefined variable: descrip (C:\xampp\htdocs\nuevospro\primeraimpresion\blog\themes\admin\views\site\index.php:68)
+Stack trace:
+#0 C:\xampp\htdocs\nuevospro\primeraimpresion\framework\web\CController.php(869): SiteController->renderFile()
+#1 C:\xampp\htdocs\nuevospro\primeraimpresion\framework\web\CController.php(782): SiteController->renderPartial()
+#2 C:\xampp\htdocs\nuevospro\primeraimpresion\blog\protected\controllers\SiteController.php(32): SiteController->render()
+#3 C:\xampp\htdocs\nuevospro\primeraimpresion\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#4 C:\xampp\htdocs\nuevospro\primeraimpresion\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\xampp\htdocs\nuevospro\primeraimpresion\framework\web\CController.php(286): SiteController->runAction()
+#6 C:\xampp\htdocs\nuevospro\primeraimpresion\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#7 C:\xampp\htdocs\nuevospro\primeraimpresion\framework\web\CWebApplication.php(282): SiteController->run()
+#8 C:\xampp\htdocs\nuevospro\primeraimpresion\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\xampp\htdocs\nuevospro\primeraimpresion\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\nuevospro\primeraimpresion\blog\index.php(13): CWebApplication->run()
+REQUEST_URI=/nuevospro/primeraimpresion/blog/index.php?r=site/index

@@ -4,6 +4,3 @@ echo 'Inicio';
 
         
 ?>
-
-
-
