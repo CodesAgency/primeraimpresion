@@ -5,20 +5,23 @@ let video = document.getElementById('video');
 let subtituloLabel = document.getElementById('subtituloLabel');
 let inputRequerid = document.getElementById('inputRequerid');
 let btn_enviar = document.getElementById('btn-enviar');
+
 //"url('ul/redX.png')"
 
 titulo.addEventListener('blur', showErrorT);
 subtitulo.addEventListener('blur', showErrorSubT);
 video.addEventListener('blur', showErrorVideo);
-btn_enviar.addEventListener('click', btnEnviarRequeridCustom);
+btn_enviar.addEventListener("click", btn_enviar_fx);
 
-function btnEnviarRequeridCustom() {
-    alert('debesa rellenar esto si o si');
-}
+function btn_enviar_fx() {
+    let inputRequerid = document.getElementById('inputRequerid');
+    if (inputRequerid.checked = "true") {
+        console.log('enviando datos');
+    } else {
 
-function ainputRequerid(obj1) {
-    if (obj1.value == "") {
-        alert('debesa rellenar esto si o si');
+        location.href = "http://localhost/primeraimpresion/blog/index.php?r=post/create";
+        alert('SI USTED NO CLIKEO EL ESTADO POR DEFAULT EL ESTADO SALDRÁ INACTIVO');
+
     }
 }
 
@@ -38,9 +41,9 @@ function showErrorT() {
 
 function showErrorSubT() {
     if (subtitulo.value == "") {
-        let showErrorTaskSub = new recocnocimiento(subtitulo, "url('ul/orangeX.png')")
+        let showErrorTaskSub = new recocnocimiento(subtitulo, "url('ul/orangeX.png')");
         showErrorTaskSub.showError();
-        subtituloLabel.innerHTML = "Este campo no es muy importante, por eso la X es de color naranja su rquerimiento es optativo depende ti.";
+        subtituloLabel.innerHTML = "Este campo no es muy importante, por eso la X es de color naranja su requerimiento es optativo depende ti.";
         subtituloLabel.style.color = "orange";
         subtituloLabel.style.fontSize = "10px";
         subtituloLabel.style.textAlign = "left";

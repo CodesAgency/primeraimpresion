@@ -94,7 +94,8 @@ $categoria=mysqli_query($conexion,"select * from categoria") or
                        <p id=""></p>
                    </table>
                     <br>
-                    <select name="categoria_id">
+                    <label for="categoria_id">Escoge una categoría si no has creado una entra <a href="http://localhost/primeraimpresion/blog/index.php?r=categoria/create">Aquí</a></label>
+                    <select name="categoria_id" id="categoria_id">
                         <option value="#">Categoria</option>
                         <?php
                         if ($cat=mysqli_fetch_array($categoria)){

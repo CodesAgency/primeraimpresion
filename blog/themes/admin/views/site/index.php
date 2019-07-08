@@ -1,7 +1,7 @@
 <?php
 include 'conexion3.php';
-
 ?>
+
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -32,37 +32,51 @@ include 'conexion3.php';
         
         #histories {
             display: flex;
-            justify-content: space-around;
+            justify-content: center;
             align-items: center;
             flex-wrap: wrap;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 2px 5px 11px rgba(10,10,10,0.8);
+            border: solid 2px white;
+            transition: ease all 0.3s;
+            background-color: whitesmoke;
+        }
+        #histories:hover{
+            border: solid 2px orangered;
+            transition: ease all 0.3s; 
         }
         
         #contHistories {
             display: flex;
             justify-content: space-evenly;
+            align-items: center;
             flex-wrap: wrap;
+            margin-top: -150px;
         }
         
         #menublogLateral {
             width: 320px;
         }
+        .historiesC{
+            margin-top: 15px;
+        }
     </style>
 </head>
            
 <body>
+<div class="container-fluid" id="contHistories">
     <?php 
-    
-    $registros=mysqli_query($conexion,"SELECT * from`post") or
-  die("Problemas en el select:".mysqli_error($conexion));
+$registros=mysqli_query($conexion,"SELECT * from`post") or
+die("Problemas en el select:".mysqli_error($conexion));
 
 while ($reg=mysqli_fetch_array($registros))
 {
    ?>
-<div class="container-fluid" id="contHistories">
-        <div id="histories">
-            <div id="noteBlog3" class="notes  mr-4 mt-4">
+        <div id="histories" class="historiesC">
+            <div id="noteBlog3" class="notes mr-4 mt-4">
                 <div class="card" style="width: 18rem;">
-                    <img src="img/<?php echo $reg['id'];?>/1.jpg" class="card-img-top" alt="...">
+                    <img src="img/<?php echo $reg['id'];?>/1.jpg" class="card-img-top" width="300px" height="298px" alt="...">
                     <div class="card-body">
                         <h5 class="card-title"><?php echo $reg['titulo']; ?></h5>
                         <p class="card-text"><?php  echo $reg['descripcion_breve']; ?></p>
@@ -71,12 +85,12 @@ while ($reg=mysqli_fetch_array($registros))
                 </div>
             </div>
         </div>
-    </div>  
+ 
     <?php
    
 }
     
     ?>
-    
+    </div>     
 </body>
 </html>
