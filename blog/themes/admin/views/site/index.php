@@ -62,7 +62,7 @@ include 'conexion3.php';
 <body>
 <div class="container-fluid" id="contHistories">
     <?php 
-$registros=mysqli_query($conexion,"SELECT * from`post") or
+$registros=mysqli_query($conexion,"select * from post AS po INNER JOIN post_img AS pi ON po.id = pi.id_post") or
 die("Problemas en el select:".mysqli_error($conexion));
 
 while ($reg=mysqli_fetch_array($registros))
@@ -71,7 +71,8 @@ while ($reg=mysqli_fetch_array($registros))
         <div id="histories" class="historiesC">
             <div id="noteBlog3" class="notes mr-4 mt-4">
                 <div class="card" style="width: 18rem;">
-                    <img src="img/<?php echo $reg['id'];?>/1.jpg" class="card-img-top" width="300px" height="298px" alt="...">
+                    <img src="data:image/gif;base64,<?php echo base64_encode($reg['imagenes']);?>" 
+title="Título de la imágen" />
                     <div class="card-body">
                         <h5 class="card-title"><?php echo $reg['titulo']; ?></h5>
                         <p class="card-text"><?php  echo $reg['descripcion_breve']; ?></p>

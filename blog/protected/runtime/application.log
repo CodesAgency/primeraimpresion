@@ -491,3 +491,27 @@ Stack trace:
 #11 C:\xampp\htdocs\primeraimpresion\framework\base\CApplication.php(185): CWebApplication->processRequest()
 #12 C:\xampp\htdocs\primeraimpresion\blog\index.php(13): CWebApplication->run()
 REQUEST_URI=/primeraimpresion/blog/index.php?r=site/history&id=7
+2019/07/18 18:20:33 [error] [exception.CHttpException.400] CHttpException: Su solicitud es inválida. in C:\xampp\htdocs\primeraimpresion\framework\web\CController.php:336
+Stack trace:
+#0 C:\xampp\htdocs\primeraimpresion\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\xampp\htdocs\primeraimpresion\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#2 C:\xampp\htdocs\primeraimpresion\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 C:\xampp\htdocs\primeraimpresion\framework\web\CWebApplication.php(282): CController->run('history')
+#4 C:\xampp\htdocs\primeraimpresion\framework\web\CWebApplication.php(141): CWebApplication->runController('site/history')
+#5 C:\xampp\htdocs\primeraimpresion\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#6 C:\xampp\htdocs\primeraimpresion\blog\index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/primeraimpresion/blog/index.php?r=site/history
+---
+2019/07/18 18:32:32 [error] [exception.CHttpException.400] CHttpException: Su solicitud es inválida. in C:\xampp\htdocs\primeraimpresion\framework\web\CController.php:336
+Stack trace:
+#0 C:\xampp\htdocs\primeraimpresion\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\xampp\htdocs\primeraimpresion\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#2 C:\xampp\htdocs\primeraimpresion\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 C:\xampp\htdocs\primeraimpresion\framework\web\CWebApplication.php(282): CController->run('history')
+#4 C:\xampp\htdocs\primeraimpresion\framework\web\CWebApplication.php(141): CWebApplication->runController('site/history')
+#5 C:\xampp\htdocs\primeraimpresion\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#6 C:\xampp\htdocs\primeraimpresion\blog\index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/primeraimpresion/blog/index.php?r=site/history
+---

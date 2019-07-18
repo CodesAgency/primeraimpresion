@@ -36,7 +36,7 @@ $id=yii::app()->user->getState("id");
 
 <div class="container-fluid">
 <?php
-    $registros=mysqli_query($conexion,"select * from post AS po INNER JOIN post_img AS pi ON po.id = pi.id_post") or
+    $registros=mysqli_query($conexion,"select * from post AS po INNER JOIN post_img AS pi ON po.id = pi.id_post WHERE po.id = '$id'") or
     die("Problemas en el select:".mysqli_error($conexion));
 if ($reg=mysqli_fetch_array($registros))
 {
