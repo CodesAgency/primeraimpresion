@@ -1,12 +1,4 @@
-<style>
-    #navBarTop{
-        background-color: #1C2833;
-        width: 100%;
-    }
-    #navBarMenu{
-        margin-top: 40px;
-    }
-</style>
+
 
 <div class="navbar navbar-inverse navbar-static-top">
 	<div id="navBarTop">

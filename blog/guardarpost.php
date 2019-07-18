@@ -82,7 +82,7 @@ $categoria=mysqli_query($conexion,"select * from categoria") or
                 <form action="guardarpost2.php" method="post" id="frm-test" enctype="multipart/form-data">                   
                     
                     <h2>Anexar Banner</h2>
-                    <input name="imagen" type="file" maxlength="150" id="file">
+                    <input type="file" class="form-control" id="image" required name="image" multiple>
                     <input type="hidden" name="id" value="<?php echo $id;?>">
                     <input type="submit" class="btn btn-default" id="btn-enviar" value="Mostrar Resultado">
                 </form>

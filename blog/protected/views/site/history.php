@@ -11,20 +11,9 @@ $id=yii::app()->user->getState("id");
 <head>
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <style>
-        *{
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
+        
         .img{
             opacity: 0.2;
-        }
-        #banner{
-            width: 100%;
-            height: 200px;
-            background-image: url('images/branding.jpg');
-            border-radius: 10px 10px 0px 0px;
-            background-size: 100% auto;
         }
         #coments{
             width: 70%;
@@ -44,15 +33,17 @@ $id=yii::app()->user->getState("id");
     </style>
 </head>
 <body>
+
 <div class="container-fluid">
 <?php
-    $registros=mysqli_query($conexion,"select * from post where id='$_REQUEST[id]'") or
+    $registros=mysqli_query($conexion,"select * from post AS po INNER JOIN post_img AS pi ON po.id = pi.id_post") or
     die("Problemas en el select:".mysqli_error($conexion));
 if ($reg=mysqli_fetch_array($registros))
 {
 	?>
 	<div class="container mt-4" id="contenido">
-            <img src="img/<?php echo $reg['id'];?>/1.jpg" width="50%" height="auto">
+    <img src="data:image/gif;base64,<?php echo base64_encode($reg['imagenes']);?>" 
+title="Título de la imágen" />
             <section class="container mt-4 mb-4">
                 <h2><strong><?php echo $reg['titulo'];?></strong></h2>
                 <h5><?php echo $reg['descripcion_breve'];?></h5>
@@ -64,7 +55,7 @@ if ($reg=mysqli_fetch_array($registros))
                 <br>
                 <div class="paragraph">
                     <button class="btn btn-warning" id="commentHistory">
-                        Comentar Historia
+                        Comentar Historia...
                     </button>
                 </div>
             </section>
@@ -117,6 +108,7 @@ else
         }
 	?>
     </div>
+    
 </body>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>

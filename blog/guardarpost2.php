@@ -1,40 +1,35 @@
 <?php
 
-$id=$_REQUEST['id'];
+    $revisar = getimagesize($_FILES["image"]["tmp_name"]);
+    if($revisar !== false){
+        $image = $_FILES['image']['tmp_name'];
+        $imgContenido = addslashes(file_get_contents($image));
         
-// crear directorio
-if (isset($_POST["imagen"])) 
-	{
-        echo 'si hay imagen';
-	}else
-		{
-		echo 'no hay imagen';
-		}
-					
-					$Rando=$id;
-					$carpeta = './img/'.$Rando."/";
-					echo $carpeta;
-						if (!file_exists($carpeta)) {
-							mkdir($carpeta, 0777, true);
-							
-						}
-						
-$nombre = $_FILES['imagen']['name'];
-$nombrer = strtolower($nombre);
-$cd=$_FILES['imagen']['tmp_name'];
-$ruta = "img/" .$Rando."/".'1.jpg';
-$destino = "img/".$nombrer;
-$resultado = @move_uploaded_file($_FILES["imagen"]["tmp_name"], $ruta);
-
-					
-					echo "Destino:".$destino."<br/>";
-					echo "CD:".$cd."<br/>";
-					echo "Nombre:".$nombre."<br/>";
-					echo "Nombrer:".$nombrer."<br/>";
-					
-					
+        //Credenciales Mysql
+        $Host = 'localhost';
+        $Username = 'root';
+        $Password = '';
+        $dbName = 'blog';
+        
+        //Crear conexion con la abse de datos
+        $db = new mysqli($Host, $Username, $Password, $dbName);
+        
+        // Cerciorar la conexion
+        if($db->connect_error){
+            die("Connection failed: " . $db->connect_error);
+        }
+        
+        
+        //Insertar imagen en la base de datos
+        $insertar = $db->query("INSERT into post_img (imagenes, creado, id_post) VALUES ('$imgContenido', now(), '$_REQUEST[id]')");
+		// COndicional para verificar la subida del fichero
+        if($insertar){
+            echo "Archivo Subido Correctamente.";
+        }else{
+            echo "Ha fallado la subida, reintente nuevamente.";
+        } 
+		// Sie el usuario no selecciona ninguna imagen
+    }else{
+        echo "Por favor seleccione imagen a subir.";
+    }
 ?>
-
-        <script type="text/javascript">
-parent.location.href = "index.php?r=site/history&id=<?php echo $id;?>";
-</script>
