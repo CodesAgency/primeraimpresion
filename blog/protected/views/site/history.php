@@ -36,7 +36,7 @@ $id=yii::app()->user->getState("id");
 
 <div class="container-fluid">
 <?php
-    $registros=mysqli_query($conexion,"select * from post AS po INNER JOIN post_img AS pi ON po.id = pi.id_post WHERE po.id = '$id'") or
+    $registros=mysqli_query($conexion,"select * from post AS po INNER JOIN post_img AS pi ON po.id = pi.id_post WHERE po.id = '$_REQUEST[id]'") or
     die("Problemas en el select:".mysqli_error($conexion));
 if ($reg=mysqli_fetch_array($registros))
 {
@@ -67,7 +67,7 @@ title="Título de la imágen" />
             </section>
     </div>
     <div>
-        <iframe width="560" height="315" src="<?php echo $reg['videoUrl']?>" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/<?php echo $reg['videoUrl']?>" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     <?php echo $reg['videoUrl']?>
     </div>
 	<?php
@@ -78,7 +78,7 @@ else
 
 	?>
 	<div class="container mt-4" id="contenido">
-            <?php require_once('banner.php') ?>
+            <?php //require_once('banner.php') ?>
             <section class="container mt-4 mb-4">
                 <figure>
                     <img src="../images/hombre_write.png" alt="">
@@ -87,7 +87,7 @@ else
                 </h2>
                 <h5>
                 <?php
-                    require_once('subtitle.php')
+                    //require_once('subtitle.php')
                 ?>
                 </h5>
                 <div class="paragraph">
@@ -98,7 +98,7 @@ else
             </section>
             <section class="container-fluid mt-4 mb-4 p-4">
                 <?php
-                    require_once('publicComent.php');
+                    //require_once('publicComent.php');
                 ?>
                 <div id="request">
             </div>

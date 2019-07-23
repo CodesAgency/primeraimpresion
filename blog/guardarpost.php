@@ -34,7 +34,7 @@ else
 {
   $id=1;  
 }
-echo $id;
+//echo $id;
 
 mysqli_query($conexion,"INSERT INTO post(id, titulo, descripcion_breve, contenido, localimg, videoUrl,status, categoria_id, users_id) VALUES ('$id', '$titulo', '$descripcion_breve', '$contenido', '$id', '$videoUrl', '$status', '$categoria_id', '$users_id')")
   or die("Problemas en el select".mysqli_error($conexion));
